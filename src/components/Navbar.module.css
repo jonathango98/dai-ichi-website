@@ -1,0 +1,210 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--charcoal);
+  border-bottom: 3px solid var(--red);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  line-height: 1;
+}
+
+.brandLogo {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.brandSub {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--silver);
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver);
+  transition: color 0.2s;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red);
+  transition: width 0.2s;
+}
+
+.link:hover {
+  color: var(--white);
+}
+
+.link:hover::after,
+.active::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--white);
+}
+
+.ctaLink {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.5rem 1.25rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.ctaLink:hover {
+  background-color: #b71c1c;
+  transform: translateY(-1px);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.bar, .barOpen {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center;
+}
+
+.barMid, .barMidOpen {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--white);
+  transition: opacity 0.3s;
+}
+
+.barOpen:first-child { transform: translateY(8px) rotate(45deg); }
+.barMidOpen { opacity: 0; }
+.barOpen:last-child { transform: translateY(-8px) rotate(-45deg); }
+
+.langToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: transparent;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  border-radius: 3px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.langToggle:hover {
+  border-color: var(--silver);
+}
+
+.langActive {
+  font-family: var(--font-headline);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--white);
+}
+
+.langInactive {
+  font-family: var(--font-headline);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(192, 192, 192, 0.45);
+}
+
+.langSep {
+  font-size: 0.7rem;
+  color: rgba(192, 192, 192, 0.35);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background-color: var(--charcoal);
+    padding: 1rem 1.5rem 1.5rem;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .link {
+    padding: 0.75rem 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.15);
+  }
+
+  .ctaLink {
+    margin-top: 1rem;
+    align-self: stretch;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  .langToggle {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,448 @@
+/* ─── PAGE HERO ──────────────────────────────────── */
+.pageHero {
+  background-color: var(--charcoal);
+  padding: 6rem 1.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pageHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(211, 47, 47, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid var(--red);
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  color: var(--white);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.heroAccent {
+  color: var(--red);
+}
+
+.heroSubtitle {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  color: var(--silver);
+  max-width: 580px;
+  line-height: 1.8;
+}
+
+/* ─── CONTACT SECTION ────────────────────────────── */
+.contactSection {
+  background-color: var(--frost);
+  padding: 5rem 1.5rem;
+}
+
+.contactContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* ─── FORM SIDE ───────────────────────────────────── */
+.formSide {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 2.5rem;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid var(--red);
+}
+
+.formTitle {
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.formIntro {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  letter-spacing: 0.02em;
+}
+
+.hint {
+  font-weight: 400;
+  color: #888;
+  font-size: 0.78rem;
+}
+
+.required {
+  color: var(--red);
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  background-color: var(--frost);
+  border: 1.5px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  resize: none;
+}
+
+.input:focus, .textarea:focus {
+  border-color: var(--charcoal);
+  box-shadow: 0 0 0 3px rgba(43, 43, 43, 0.08);
+  background-color: var(--white);
+}
+
+.inputError {
+  border-color: var(--red) !important;
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1) !important;
+}
+
+.errorMsg {
+  font-size: 0.78rem;
+  color: var(--red);
+  font-weight: 500;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.submitBtn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+.disclaimer {
+  font-size: 0.78rem;
+  color: #999;
+  line-height: 1.6;
+  margin-top: -0.5rem;
+}
+
+/* ─── INFO SIDE ───────────────────────────────────── */
+.infoSide {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoCard {
+  background-color: var(--charcoal);
+  border-radius: 8px;
+  padding: 2rem;
+  border-top: 4px solid var(--red);
+}
+
+.infoCardTitle {
+  font-family: var(--font-headline);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.infoIcon {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.2rem;
+}
+
+.infoValue {
+  font-size: 0.88rem;
+  color: var(--silver);
+  line-height: 1.5;
+}
+
+.infoDivider {
+  height: 1px;
+  background-color: rgba(192, 192, 192, 0.15);
+  margin: 1.5rem 0;
+}
+
+.infoSubtitle {
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-bottom: 1rem;
+}
+
+.leadTimeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.leadItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leadBrand {
+  font-size: 0.85rem;
+  color: var(--silver);
+  font-weight: 500;
+}
+
+.leadTime {
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: rgba(211, 47, 47, 0.2);
+  border: 1px solid rgba(211, 47, 47, 0.4);
+  padding: 0.2rem 0.65rem;
+  border-radius: 3px;
+}
+
+.warrantyBadge {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  background-color: rgba(211, 47, 47, 0.1);
+  border: 1px solid rgba(211, 47, 47, 0.3);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.warrantyIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.warrantyTitle {
+  font-family: var(--font-headline);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.2rem;
+}
+
+.warrantyDesc {
+  font-size: 0.78rem;
+  color: var(--silver);
+}
+
+.brandCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.brandMini {
+  background-color: var(--white);
+  border-left: 4px solid;
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.brandMiniName {
+  font-family: var(--font-headline);
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  color: var(--charcoal);
+}
+
+.brandMiniTag {
+  font-size: 0.72rem;
+  color: #888;
+  font-weight: 500;
+}
+
+/* ─── SUCCESS PAGE ────────────────────────────────── */
+.successPage {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--frost);
+  padding: 4rem 1.5rem;
+}
+
+.successCard {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 3.5rem;
+  text-align: center;
+  max-width: 520px;
+  width: 100%;
+  border-top: 4px solid var(--red);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.successIcon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin: 0 auto 1.5rem;
+}
+
+.successTitle {
+  font-size: 1.75rem;
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+}
+
+.successBody {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.successBody strong {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+.successBtn {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+  padding: 0.75rem 1.75rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.successBtn:hover {
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 960px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .infoSide {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .fieldRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formSide {
+    padding: 1.5rem;
+  }
+
+  .submitBtn {
+    width: 100%;
+    text-align: center;
+  }
+}

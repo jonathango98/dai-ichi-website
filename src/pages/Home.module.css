@@ -1,0 +1,698 @@
+/* ─── HERO ─────────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--charcoal);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    );
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(211, 47, 47, 0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.heroOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, var(--red), transparent);
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heroBadge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  border: 1px solid var(--red);
+  padding: 0.3rem 0.9rem;
+  border-radius: 2px;
+  margin-bottom: 1.75rem;
+}
+
+.heroTitle {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.0;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+}
+
+.heroAccent {
+  color: var(--red);
+  position: relative;
+  display: inline-block;
+}
+
+.heroAccent::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--red);
+  opacity: 0.4;
+}
+
+.heroSubtitle {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  color: var(--silver);
+  max-width: 600px;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.heroCta {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.9rem 2rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.heroCta:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+.heroSecondary {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver);
+  border: 1px solid rgba(192, 192, 192, 0.4);
+  padding: 0.9rem 2rem;
+  border-radius: 3px;
+  transition: color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.heroSecondary:hover {
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+.heroStats {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.statNum {
+  font-family: var(--font-headline);
+  font-weight: 900;
+  font-size: 2.25rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--silver);
+  margin-top: 0.3rem;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(192, 192, 192, 0.25);
+}
+
+/* ─── TRUST BAR ─────────────────────────────────────── */
+.trustBar {
+  background-color: var(--red);
+  padding: 1rem 0;
+}
+
+.trustContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.trustItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-headline);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.trustIcon {
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.trustDivider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ─── SHARED SECTION LAYOUT ─────────────────────────── */
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.sectionLabel {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* ─── PRODUCTS ────────────────────────────────────── */
+.products {
+  background-color: var(--frost);
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.productCard {
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 2rem;
+  border-top: 4px solid var(--accent, var(--red));
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+}
+
+.productLogoWrap {
+  background-color: var(--charcoal);
+  margin: -2rem -2rem 1.25rem -2rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+.productLogo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 3px;
+}
+
+.productTag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent, var(--red));
+  border: 1px solid var(--accent, var(--red));
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.productTitle {
+  font-size: 1.75rem;
+  color: var(--charcoal);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.productTagline {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent, var(--red));
+  margin-bottom: 1rem;
+}
+
+.productDesc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.featureList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.75rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.featureDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent, var(--red));
+  flex-shrink: 0;
+}
+
+.productCta {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+  padding: 0.6rem 1.2rem;
+  border-radius: 3px;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: auto;
+}
+
+.productCta:hover {
+  background-color: var(--charcoal);
+  color: var(--white);
+}
+
+/* ─── VIRTUAL SHOP ────────────────────────────────── */
+.virtualShop {
+  background-color: var(--charcoal);
+  padding: 0;
+}
+
+.virtualShopInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: space-between;
+}
+
+.virtualShopText {
+  flex: 1;
+}
+
+.virtualShopTitle {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--white);
+  margin: 0.5rem 0 1rem;
+  letter-spacing: -0.01em;
+}
+
+.virtualShopBody {
+  font-size: 1rem;
+  color: var(--silver);
+  line-height: 1.8;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.virtualShopActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.virtualShopCta {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.85rem 1.75rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.virtualShopCta:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+.virtualShopWaBtn {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver);
+  border: 1px solid rgba(192, 192, 192, 0.4);
+  padding: 0.85rem 1.75rem;
+  border-radius: 3px;
+  transition: color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.virtualShopWaBtn:hover {
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+.virtualShopBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.virtualShopLogo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  padding: 1rem;
+  border: 1px solid rgba(192, 192, 192, 0.15);
+}
+
+.virtualShopHandle {
+  font-family: var(--font-headline);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--silver);
+  text-transform: uppercase;
+}
+
+/* ─── ACHIEVEMENTS ────────────────────────────────── */
+.achievements {
+  background-color: var(--frost);
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.achievementCard {
+  background-color: var(--white);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 3px solid var(--red);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.achievementCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.achievementNum {
+  font-family: var(--font-headline);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 900;
+  color: var(--red);
+  line-height: 1;
+}
+
+.achievementLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* ─── TECH ────────────────────────────────────────── */
+.tech {
+  background-color: var(--charcoal);
+}
+
+.tech .sectionTitle {
+  color: var(--white);
+}
+
+.tech .sectionSubtitle {
+  color: var(--silver);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.techCard {
+  border: 1px solid rgba(192, 192, 192, 0.15);
+  border-radius: 6px;
+  padding: 2rem 1.5rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.techCard:hover {
+  border-color: var(--red);
+  background-color: rgba(211, 47, 47, 0.05);
+}
+
+.techIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.techTitle {
+  font-family: var(--font-headline);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.techDesc {
+  font-size: 0.875rem;
+  color: var(--silver);
+  line-height: 1.7;
+}
+
+/* ─── CTA SECTION ─────────────────────────────────── */
+.ctaSection {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--charcoal);
+  margin-bottom: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaBody {
+  font-size: 1rem;
+  color: #555;
+  max-width: 520px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.ctaBtn {
+  display: inline-block;
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--red);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 3px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.ctaBtn:hover {
+  background-color: #b71c1c;
+  transform: translateY(-2px);
+}
+
+/* ─── RESPONSIVE ──────────────────────────────────── */
+@media (max-width: 1024px) {
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .heroStats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .trustContainer {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .trustDivider {
+    display: none;
+  }
+
+  .virtualShopInner {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .virtualShopBody {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .virtualShopActions {
+    justify-content: center;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .achievementsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
