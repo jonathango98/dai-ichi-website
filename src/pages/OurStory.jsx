@@ -44,8 +44,8 @@ export default function OurStory() {
                 />
               ))}
             </div>
-            <div className={`${styles.meaningVisual} reveal-right${meaningVisible ? ' visible' : ''}`}
-              style={{ '--reveal-delay': '120ms' }}
+            <div className={`${styles.meaningVisual} reveal-scale${meaningVisible ? ' visible' : ''}`}
+              style={{ '--reveal-delay': '180ms' }}
             >
               <div className={styles.meaningCard}>
                 <div className={styles.meaningKanji}>第一</div>
@@ -74,7 +74,7 @@ export default function OurStory() {
               {s.events.map((event, i) => (
                 <div
                   key={event.year}
-                  className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} reveal${timelineVisible ? ' visible' : ''}`}
+                  className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} ${event.highlight ? 'reveal-scale' : 'reveal'}${timelineVisible ? ' visible' : ''}`}
                   style={{ '--reveal-delay': `${i * 100}ms` }}
                 >
                   <div className={styles.eventYear}>{event.year}</div>

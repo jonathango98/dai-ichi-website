@@ -1,16 +1,20 @@
 import { NavLink } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
+import useInView from '../hooks/useInView'
 import styles from './Footer.module.css'
 
 export default function Footer() {
   const { t } = useLanguage()
   const f = t.footer
+  const [footerRef, footerVisible] = useInView()
 
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.top}>
-          <div className={styles.brandCol}>
+        <div className={styles.top} ref={footerRef}>
+          <div className={`${styles.brandCol} reveal${footerVisible ? ' visible' : ''}`}
+            style={{ '--reveal-delay': '0ms' }}
+          >
             <img
               src="/dai-ichi-logo.png"
               alt="Dai-ichi Logo"
@@ -23,21 +27,27 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className={styles.linksCol}>
+          <div className={`${styles.linksCol} reveal${footerVisible ? ' visible' : ''}`}
+            style={{ '--reveal-delay': '100ms' }}
+          >
             <h4 className={styles.colTitle}>{f.navTitle}</h4>
             <NavLink to="/" className={styles.link}>{t.nav.home}</NavLink>
             <NavLink to="/our-story" className={styles.link}>{t.nav.story}</NavLink>
             <NavLink to="/contact" className={styles.link}>{t.nav.contact}</NavLink>
           </div>
 
-          <div className={styles.brandsCol}>
+          <div className={`${styles.brandsCol} reveal${footerVisible ? ' visible' : ''}`}
+            style={{ '--reveal-delay': '180ms' }}
+          >
             <h4 className={styles.colTitle}>{f.brandsTitle}</h4>
             {f.brands.map((b) => (
               <span key={b} className={styles.brandItem}>{b}</span>
             ))}
           </div>
 
-          <div className={styles.socialCol}>
+          <div className={`${styles.socialCol} reveal${footerVisible ? ' visible' : ''}`}
+            style={{ '--reveal-delay': '260ms' }}
+          >
             <h4 className={styles.colTitle}>{f.socialTitle}</h4>
             <a
               href="https://instagram.com/pegasusknalpot"
