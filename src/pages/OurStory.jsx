@@ -10,7 +10,6 @@ export default function OurStory() {
   usePageMeta({ title: s.metaTitle, description: s.metaDescription })
 
   const [meaningRef, meaningVisible] = useInView()
-  const [founderRef, founderVisible] = useInView()
   const [timelineHeaderRef, timelineHeaderVisible] = useInView()
   const [timelineRef, timelineVisible] = useInView()
   const [valuesHeaderRef, valuesHeaderVisible] = useInView()
@@ -58,32 +57,6 @@ export default function OurStory() {
         </div>
       </section>
 
-      {/* ── FOUNDER ── */}
-      <section className={styles.founderSection}>
-        <div className={styles.sectionContainer}>
-          <div className={styles.founderGrid} ref={founderRef}>
-            <div className={`${styles.founderImageWrap} reveal-left${founderVisible ? ' visible' : ''}`}>
-              <img
-                src="/yahya-goenadibrata.jpeg"
-                alt="Yahya Goenadibrata — Founder of CV Dai Ichi Indonesia"
-                className={styles.founderImage}
-              />
-            </div>
-            <div className={`${styles.founderContent} reveal-right${founderVisible ? ' visible' : ''}`}
-              style={{ '--reveal-delay': '120ms' }}
-            >
-              <span className={styles.sectionLabel}>{s.founderLabel}</span>
-              <h2 className={styles.founderName}>{s.founderName}</h2>
-              <p className={styles.founderYears}>{s.founderYears}</p>
-              <blockquote className={styles.founderQuote}>{s.founderQuote}</blockquote>
-              {s.founderBio.map((para, i) => (
-                <p key={i} className={styles.founderBioText}>{para}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── TIMELINE ── */}
       <section className={styles.timelineSection}>
         <div className={styles.sectionContainer}>
@@ -96,24 +69,40 @@ export default function OurStory() {
             <p className={styles.timelineSubtitle}>{s.timelineSubtitle}</p>
           </div>
 
-          <div className={styles.timeline} ref={timelineRef}>
-            {s.events.map((event, i) => (
-              <div
-                key={event.year}
-                className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} reveal${timelineVisible ? ' visible' : ''}`}
-                style={{ '--reveal-delay': `${i * 100}ms` }}
-              >
-                <div className={styles.eventYear}>{event.year}</div>
-                <div className={styles.eventConnector}>
-                  <div className={styles.eventDot} />
-                  <div className={styles.eventLine} />
+          <div className={styles.timelineBody}>
+            <div className={styles.timeline} ref={timelineRef}>
+              {s.events.map((event, i) => (
+                <div
+                  key={event.year}
+                  className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} reveal${timelineVisible ? ' visible' : ''}`}
+                  style={{ '--reveal-delay': `${i * 100}ms` }}
+                >
+                  <div className={styles.eventYear}>{event.year}</div>
+                  <div className={styles.eventConnector}>
+                    <div className={styles.eventDot} />
+                    <div className={styles.eventLine} />
+                  </div>
+                  <div className={styles.eventContent}>
+                    <h3 className={styles.eventTitle}>{event.title}</h3>
+                    <p className={styles.eventDesc}>{event.description}</p>
+                  </div>
                 </div>
-                <div className={styles.eventContent}>
-                  <h3 className={styles.eventTitle}>{event.title}</h3>
-                  <p className={styles.eventDesc}>{event.description}</p>
+              ))}
+            </div>
+
+            <div className={styles.timelinePhotoCol}>
+              <div className={styles.timelinePhotoSticky}>
+                <img
+                  src="/yahya-goenadibrata.jpeg"
+                  alt="Yahya Goenadibrata — Founder of CV Dai Ichi Indonesia"
+                  className={styles.timelinePhoto}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>{s.founderName}</span>
+                  <span className={styles.timelinePhotoCaptionRole}>{s.founderLabel} · {s.founderYears}</span>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,8 @@
 
 This document is the single source of truth for CV Dai Ichi Indonesia — covering company facts, brand identity, design system, and website implementation.
 
+> **IMPORTANT — AI instruction:** Do not fabricate, infer, or invent any company information, copy, statistics, quotes, dates, names, or other content that is not explicitly stated in this document. If information is missing or marked as a placeholder, leave it as a placeholder or ask the owner — never fill it in with assumed or generated content.
+
 ---
 
 ## 0. Dev Environment Notes

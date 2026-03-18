@@ -157,11 +157,6 @@ export const translations = {
       founderLabel: 'Pendiri',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
-      founderQuote: '"Satu las yang sempurna lebih berharga dari seribu yang asal jadi."',
-      founderBio: [
-        'Yahya Goenadibrata memulai CV Dai Ichi dari sudut kecil di belakang toko suku cadang Agung Motor, Jl. Gajahmada 31, Sidoarjo — dengan keyakinan bahwa knalpot buatan lokal bisa menyamai kualitas impor.',
-        'Ketika kebakaran menghancurkan segalanya pada 1993, ia memilih untuk membangun kembali, bukan menyerah. Lahirlah pabrik Bulusidokare seluas ±7.000 m² — fondasi dari apa yang kini menjadi CV Dai Ichi Indonesia.',
-      ],
       timelineLabel: 'Perjalanan Kami',
       timelineTitle: 'LINIMASA KETANGGUHAN',
       timelineSubtitle: 'Dari bencana menuju warisan — sejarah CV Dai Ichi Indonesia.',
@@ -436,11 +431,6 @@ export const translations = {
       founderLabel: 'Founder',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
-      founderQuote: '"One perfect weld is worth more than a thousand careless ones."',
-      founderBio: [
-        'Yahya Goenadibrata started CV Dai Ichi from a small corner behind the Agung Motor spare parts store on Jl. Gajahmada 31, Sidoarjo — driven by the belief that locally-made exhausts could match the quality of imports.',
-        'When a fire destroyed everything in 1993, he chose to rebuild rather than walk away. From those ashes rose the Bulusidokare factory spanning ±7,000 m² — the foundation of what CV Dai Ichi Indonesia is today.',
-      ],
       timelineLabel: 'Our Journey',
       timelineTitle: 'A TIMELINE OF RESILIENCE',
       timelineSubtitle: 'From adversity to legacy — the history of CV Dai Ichi Indonesia.',
