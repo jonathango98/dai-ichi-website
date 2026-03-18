@@ -1,6 +1,6 @@
-# CV Dai Ichi Indonesia — Website
+# Dai Ichi Indonesia — Website
 
-Official website for CV Dai Ichi Indonesia, a precision exhaust system manufacturer based in Bulusidokare, Sidoarjo since 1985.
+Official website for Dai Ichi Indonesia, a precision exhaust system manufacturer based in Bulusidokare, Sidoarjo since 1985.
 
 ## Stack
 

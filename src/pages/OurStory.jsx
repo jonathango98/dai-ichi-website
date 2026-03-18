@@ -1,6 +1,7 @@
 import { useLanguage } from '../contexts/LanguageContext'
 import useInView from '../hooks/useInView'
 import usePageMeta from '../hooks/usePageMeta'
+import GalleryCarousel from '../components/GalleryCarousel'
 import styles from './OurStory.module.css'
 
 export default function OurStory() {
@@ -94,18 +95,31 @@ export default function OurStory() {
               <div className={styles.timelinePhotoSticky}>
                 <img
                   src="/yahya-goenadibrata.jpeg"
-                  alt="Yahya Goenadibrata — Founder of CV Dai Ichi Indonesia"
+                  alt="Yahya Goenadibrata — Founder of Dai Ichi Indonesia"
                   className={styles.timelinePhoto}
                 />
                 <div className={styles.timelinePhotoCaption}>
                   <span className={styles.timelinePhotoCaptionName}>{s.founderName}</span>
                   <span className={styles.timelinePhotoCaptionRole}>{s.founderLabel} · {s.founderYears}</span>
                 </div>
+                <img
+                  src="/bengkel.jpeg"
+                  alt="Bengkel Ngagel Jaya — Dai Ichi Indonesia showroom"
+                  className={styles.timelinePhoto}
+                  style={{ marginTop: '2rem' }}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>{s.bengkelName}</span>
+                  <span className={styles.timelinePhotoCaptionRole}>{s.bengkelLabel}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* ── GALLERY ── */}
+      <GalleryCarousel />
 
       {/* ── MODERN EVOLUTION ── */}
       <section className={styles.modernSection}>

@@ -87,7 +87,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.legal}>
-            &copy; {new Date().getFullYear()} CV Dai Ichi Indonesia. {f.rights}
+            &copy; {new Date().getFullYear()} Dai Ichi Indonesia. {f.rights}
           </p>
           <p className={styles.legal}>{f.established}</p>
         </div>

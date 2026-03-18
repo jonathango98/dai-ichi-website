@@ -1,0 +1,132 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.section {
+  background-color: var(--charcoal);
+  padding: 5rem 0 4rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+/* ── CAROUSEL ─────────────────────────────────────── */
+.carousel {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.imageWrap {
+  width: 100%;
+  background-color: #111;
+  border: 1px solid rgba(192, 192, 192, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 480px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+  animation: fadeIn 0.35s ease;
+}
+
+/* ── ARROWS ───────────────────────────────────────── */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(192, 192, 192, 0.25);
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background-color: var(--red);
+  border-color: var(--red);
+}
+
+.arrowLeft  { left:  calc(1.5rem + 8px); }
+.arrowRight { right: calc(1.5rem + 8px); }
+
+/* ── DOTS ─────────────────────────────────────────── */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(192, 192, 192, 0.3);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.dot:hover {
+  background-color: var(--silver);
+}
+
+.dotActive {
+  background-color: var(--red);
+  transform: scale(1.35);
+}
+
+/* ── RESPONSIVE ───────────────────────────────────── */
+@media (max-width: 768px) {
+  .imageWrap {
+    min-height: 280px;
+  }
+
+  .image {
+    max-height: 380px;
+  }
+
+  .arrowLeft  { left:  calc(1.5rem + 4px); }
+  .arrowRight { right: calc(1.5rem + 4px); }
+}

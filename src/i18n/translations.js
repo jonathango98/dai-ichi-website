@@ -20,20 +20,20 @@ export const translations = {
     },
     home: {
       metaTitle: 'Dai Ichi Indonesia — OEM, Custom & Performance Exhaust',
-      metaDescription: 'CV Dai Ichi Indonesia — produsen sistem knalpot sejak 1985. 3 merek, SUS304 stainless steel, pengiriman ke seluruh Indonesia.',
+      metaDescription: 'Dai Ichi Indonesia — produsen sistem knalpot sejak 1985. 3 merek, SUS304 stainless steel, pengiriman ke seluruh Indonesia.',
       heroBadge: 'Sejak 1985 · Sidoarjo, Indonesia',
       heroTitle1: 'DIBUAT UNTUK',
       heroTitle2: 'PERFORMA.',
       heroTitle3: 'TAHAN LAMA.',
       heroSubtitle:
-        'CV Dai Ichi — produsen sistem knalpot presisi dengan material SUS304 Stainless Steel, MIG Welding, dan Gas Cutting untuk OEM, daily, dan custom performance.',
+        'Dai Ichi Indonesia — produsen sistem knalpot presisi dengan material SUS304 Stainless Steel, MIG Welding, dan Gas Cutting untuk OEM, daily, dan custom performance.',
       heroCta: 'Konsultasi Gratis',
       heroSecondary: 'Kisah Kami',
       statFounded: 'Tahun Berdiri',
       statExp: 'Tahun Pengalaman',
       statLines: 'Lini Produk',
       trust: [
-        'Garansi 1 Tahun',
+        'Garansi Produk',
         'Ready Stock — Lini Standar',
         'SUS304 Stainless Steel',
         'Custom Fabrication Available',
@@ -48,13 +48,13 @@ export const translations = {
           tagline: 'Premium OEM & Sport',
           tag: 'Premium',
           description:
-            'Material SUS304 Stainless Steel berkualitas tinggi untuk aplikasi OEM dan sport. Presisi laser cutting dan MIG welding untuk finish mirror yang sempurna.',
+            'Material Stainless Steel berkualitas tinggi untuk aplikasi OEM dan sport. Presisi gas cutting dan MIG welding untuk hasil yang presisi.',
           features: [
-            'SUS304 High-Grade Stainless Steel',
+            'High-Grade Stainless Steel',
             'OEM Fitment Precision',
             'MIG Welding Technology',
-            'Mirror Polish Finish',
-            'Garansi 1 Tahun',
+            'Heat Resistant Paint Finish',
+            'Garansi Produk',
           ],
         },
         {
@@ -137,10 +137,14 @@ export const translations = {
       ctaBody:
         'Konsultasikan kebutuhan knalpot Anda dengan ahli fabrikasi kami. Custom order, OEM replacement, atau performance upgrade — kami siap membantu.',
       ctaBtn: 'Mulai Konsultasi Sekarang',
+      gallery: {
+        label: 'Galeri',
+        title: 'DARI BENGKEL KAMI',
+      },
     },
     story: {
       metaTitle: 'Kisah Kami — Dai Ichi Indonesia',
-      metaDescription: 'Kisah di balik CV Dai Ichi Indonesia: dari workshop Sidoarjo tahun 1985 hingga menjadi produsen knalpot terpercaya Indonesia.',
+      metaDescription: 'Kisah di balik Dai Ichi Indonesia: dari workshop Sidoarjo tahun 1985 hingga menjadi produsen knalpot terpercaya Indonesia.',
       heroBadge: 'Warisan & Sejarah',
       heroTitle1: 'KISAH DI BALIK',
       heroTitle2: 'NOMOR SATU',
@@ -149,23 +153,25 @@ export const translations = {
       meaningLabel: 'Makna di Balik Nama',
       meaningTitle: 'APA ITU "DAI-ICHI"?',
       meaningBody: [
-        '"Dai-ichi" (第一) adalah bahasa Jepang yang berarti <strong>"Nomor Satu"</strong>. Nama ini bukan sekadar aspirasi — melainkan sebuah warisan yang lahir dari dua kisah keluarga yang menyatu menjadi satu identitas.',
-        'Kisah bermula dari <em>Yahya Goenadibrata</em>, pendiri CV Dai Ichi. Kakaknya, <em>Tjhiang</em> dan istrinya, pernah tinggal dan bekerja di kota <em>Ichikawa</em>, Jepang — menyerap semangat <em>monozukuri</em>, kecintaan mendalam terhadap pengerjaan tangan yang presisi. Inspirasi itu mengalir ke Yahya, yang kemudian menikah dengan <em>Daisy</em>. Dari dua nama inilah identitas merek terbentuk: "Dai" dari Daisy, dan "ichi" dari Ichikawa — menjadi <strong>Dai-ichi</strong>.',
+        '"Dai-ichi" (第一) adalah bahasa Jepang yang berarti <strong>"Nomor Satu Yang Besar"</strong>. Nama ini bukan sekadar aspirasi — melainkan sebuah warisan yang lahir dari dua kisah keluarga yang menyatu menjadi satu identitas.',
+        'Kisah bermula dari <em>Yahya Goenadibrata</em>, pendiri Dai Ichi Indonesia. Adiknya, <em>Teguh Goenadibrata</em> dan istrinya, pernah tinggal dan bekerja di kota <em>Ichikawa</em>, Jepang — menyerap semangat <em>monozukuri</em>, kecintaan mendalam terhadap pengerjaan tangan yang presisi. Inspirasi itu mengalir ke Yahya, yang menikah dengan <em>Daisy</em>. Dari dua nama inilah identitas merek terbentuk: "Dai" dari Daisy, dan "ichi" dari Ichikawa — menjadi <strong>Dai-ichi</strong>.',
         'Setiap knalpot yang kami buat membawa semangat itu: presisi tanpa kompromi, kualitas tanpa pengecualian.',
       ],
       kanjiMeaning: '"The First" · "Number One"',
       founderLabel: 'Pendiri',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
+      bengkelName: 'Bengkel Ngagel Jaya',
+      bengkelLabel: 'Showroom · Surabaya',
       timelineLabel: 'Perjalanan Kami',
       timelineTitle: 'LINIMASA KETANGGUHAN',
-      timelineSubtitle: 'Dari bencana menuju warisan — sejarah CV Dai Ichi Indonesia.',
+      timelineSubtitle: 'Dari bencana menuju warisan — sejarah Dai Ichi Indonesia.',
       events: [
         {
           year: '1985',
-          title: 'Berdirinya CV Dai Ichi di Jl. Gajahmada',
+          title: 'Berdirinya Dai Ichi Indonesia di Jl. Gajahmada',
           description:
-            'CV Dai Ichi resmi didirikan di belakang toko suku cadang Agung Motor, Jl. Gajahmada 31, Sidoarjo. Perusahaan memasok knalpot OEM pengganti untuk kendaraan Jepang populer seperti Honda dan Daihatsu — di saat mengimpor suku cadang ori dari Jepang masih sangat mahal.',
+            'Dai Ichi Indonesia resmi didirikan di belakang toko suku cadang Agung Motor, Jl. Gajahmada 31, Sidoarjo. Perusahaan memasok knalpot OEM pengganti untuk kendaraan Jepang populer seperti Honda dan Daihatsu — di saat mengimpor suku cadang ori dari Jepang masih sangat mahal.',
           highlight: true,
         },
         {
@@ -193,26 +199,26 @@ export const translations = {
           year: '2015',
           title: 'Pergantian Generasi',
           description:
-            'Pendiri CV Dai Ichi, Yahya Goenadibrata, berpulang. Kepemimpinan beralih ke generasi kedua keluarga Goenadibrata. Outlet Pegasus Knalpot di Surabaya digabungkan kembali ke pabrik Sidoarjo — semua operasi kini terpusat di Bulusidokare.',
+            'Pendiri Dai Ichi Indonesia, Yahya Goenadibrata, berpulang. Kepemimpinan beralih ke generasi kedua keluarga Goenadibrata. Gerai Pegasus Knalpot di Jl. Ngagel Jaya 31 Surabaya ditutup dan dipindahkan menjadi satu kesatuan dengan pabrik di Sidoarjo. Semua peralatan, modifikasi, dan instalasi kini berada dalam satu atap. Pembenahan oleh generasi kedua terus dilakukan — penataan sistem produksi dan manufacturing control demi meningkatkan performa perusahaan.',
           highlight: false,
         },
         {
           year: 'Kini',
           title: 'Tiga Merek, Satu Komitmen',
           description:
-            'CV Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan SUS304, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
+            'Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan SUS304, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
           highlight: true,
         },
       ],
       modernLabel: 'Masa Kini',
-      modernTitle: 'CV MODERN DENGAN AKAR TRADISI',
+      modernTitle: 'BENGKEL MODERN DENGAN AKAR TRADISI',
       modernSubtitle:
         'Teknologi terkini, dioperasikan oleh tangan-tangan berpengalaman yang mewarisi filosofi pengerjaan dari generasi pertama.',
       values: [
         { num: '40+', title: 'Tahun Pengalaman', desc: 'Empat dekade lebih di industri knalpot Indonesia — pengetahuan yang tidak bisa dibeli.' },
         { num: '3', title: 'Lini Merek Khusus', desc: 'Setiap merek dirancang untuk segmen pasar yang berbeda, memastikan solusi yang tepat untuk setiap kebutuhan.' },
         { num: 'SUS304', title: 'Material Premium', desc: 'High-grade stainless steel yang sama digunakan pada aplikasi industri dan otomotif global.' },
-        { num: '1 Thn', title: 'Garansi Penuh', desc: 'Kepercayaan diri kami terhadap kualitas diwujudkan dalam garansi 1 tahun untuk semua produk lini standar.' },
+        { num: '✓', title: 'Garansi Produk', desc: 'Kepercayaan diri kami terhadap kualitas diwujudkan dalam garansi kualitas produksi untuk semua produk lini standar.' },
       ],
     },
     contact: {
@@ -264,7 +270,7 @@ export const translations = {
         { brand: 'Dai-ichi & Pegasus', time: 'Ready Stock' },
         { brand: 'Cobra Sport Custom', time: '~2 Minggu' },
       ],
-      warranty: { title: 'Garansi 1 Tahun', desc: 'Untuk semua lini produk standar' },
+      warranty: { title: 'Garansi Produk', desc: 'Untuk semua lini produk standar' },
       brandMinis: [
         { name: 'DAI-ICHI', tag: 'Premium · SUS304 · OEM', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
@@ -294,20 +300,20 @@ export const translations = {
     },
     home: {
       metaTitle: 'Dai Ichi Indonesia — OEM, Custom & Performance Exhaust',
-      metaDescription: 'CV Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, SUS304 stainless steel, nationwide delivery.',
+      metaDescription: 'Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, SUS304 stainless steel, nationwide delivery.',
       heroBadge: 'Since 1985 · Sidoarjo, Indonesia',
       heroTitle1: 'CRAFTED FOR',
       heroTitle2: 'PERFORMANCE.',
       heroTitle3: 'BUILT TO LAST.',
       heroSubtitle:
-        'CV Dai Ichi — precision exhaust system manufacturer using SUS304 Stainless Steel, MIG Welding, and Gas Cutting for OEM, daily, and custom performance applications.',
+        'Dai Ichi Indonesia — precision exhaust system manufacturer using SUS304 Stainless Steel, MIG Welding, and Gas Cutting for OEM, daily, and custom performance applications.',
       heroCta: 'Free Consultation',
       heroSecondary: 'Our Story',
       statFounded: 'Year Founded',
       statExp: 'Years of Experience',
       statLines: 'Product Lines',
       trust: [
-        '1-Year Warranty',
+        'Product Warranty',
         'Ready Stock — Standard Lines',
         'SUS304 Stainless Steel',
         'Custom Fabrication Available',
@@ -322,13 +328,13 @@ export const translations = {
           tagline: 'Premium OEM & Sport',
           tag: 'Premium',
           description:
-            'High-grade SUS304 Stainless Steel for OEM and sport applications. Laser cutting precision and MIG welding for a flawless mirror finish.',
+            'High-grade Stainless Steel for OEM and sport applications. Precision gas cutting and MIG welding for accurate results.',
           features: [
-            'SUS304 High-Grade Stainless Steel',
+            'High-Grade Stainless Steel',
             'OEM Fitment Precision',
             'MIG Welding Technology',
-            'Mirror Polish Finish',
-            '1-Year Warranty',
+            'Heat Resistant Paint Finish',
+            'Product Warranty',
           ],
         },
         {
@@ -411,6 +417,10 @@ export const translations = {
       ctaBody:
         'Discuss your exhaust needs with our fabrication experts. Custom orders, OEM replacement, or performance upgrades — we\'re here to help.',
       ctaBtn: 'Start Your Consultation',
+      gallery: {
+        label: 'Gallery',
+        title: 'FROM OUR WORKSHOP',
+      },
     },
     story: {
       metaTitle: 'Our Story — Dai Ichi Indonesia',
@@ -423,23 +433,25 @@ export const translations = {
       meaningLabel: 'The Meaning Behind the Name',
       meaningTitle: 'WHAT IS "DAI-ICHI"?',
       meaningBody: [
-        '"Dai-ichi" (第一) is Japanese for <strong>"Number One"</strong>. The name is not merely an aspiration — it is a legacy woven from two family stories brought together into one identity.',
-        'It began with <em>Yahya Goenadibrata</em>, the founder of CV Dai Ichi. His brother, <em>Tjhiang</em> and his wife, once lived and worked in the city of <em>Ichikawa</em>, Japan — absorbing the spirit of <em>monozukuri</em>, a profound dedication to precision craftsmanship. That inspiration flowed through to Yahya, who later married a woman named <em>Daisy</em>. From these two names the brand\'s identity was formed: "Dai" from Daisy, and "ichi" from Ichikawa — <strong>Dai-ichi</strong>.',
+        '"Dai-ichi" (第一) is Japanese for <strong>"The Big Number One"</strong>. The name is not merely an aspiration — it is a legacy woven from two family stories brought together into one identity.',
+        'It began with <em>Yahya Goenadibrata</em>, the founder of Dai Ichi Indonesia. His brother, <em>Teguh Goenadibrata</em> and his wife, once lived and worked in the city of <em>Ichikawa</em>, Japan — absorbing the spirit of <em>monozukuri</em>, a profound dedication to precision craftsmanship. That inspiration flowed through to Yahya, who married <em>Daisy</em>. From these two names the brand\'s identity was formed: "Dai" from Daisy, and "ichi" from Ichikawa — <strong>Dai-ichi</strong>.',
         'Every exhaust we build carries that spirit: precision without compromise, quality without exception.',
       ],
       kanjiMeaning: '"The First" · "Number One"',
       founderLabel: 'Founder',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
+      bengkelName: 'Bengkel Ngagel Jaya',
+      bengkelLabel: 'Showroom · Surabaya',
       timelineLabel: 'Our Journey',
       timelineTitle: 'A TIMELINE OF RESILIENCE',
-      timelineSubtitle: 'From adversity to legacy — the history of CV Dai Ichi Indonesia.',
+      timelineSubtitle: 'From adversity to legacy — the history of Dai Ichi Indonesia.',
       events: [
         {
           year: '1985',
-          title: 'CV Dai Ichi is Founded at Jl. Gajahmada',
+          title: 'Dai Ichi Indonesia is Founded at Jl. Gajahmada',
           description:
-            'CV Dai Ichi was officially founded in the back lot of Agung Motor spare parts store at Jl. Gajahmada 31, Sidoarjo. The company supplied OEM replacement exhaust for popular Japanese vehicles — at a time when importing original parts from Japan was prohibitively expensive.',
+            'Dai Ichi Indonesia was officially founded in the back lot of Agung Motor spare parts store at Jl. Gajahmada 31, Sidoarjo. The company supplied OEM replacement exhaust for popular Japanese vehicles — at a time when importing original parts from Japan was prohibitively expensive.',
           highlight: true,
         },
         {
@@ -467,26 +479,26 @@ export const translations = {
           year: '2015',
           title: 'A New Generation Takes the Helm',
           description:
-            'Founder Yahya Goenadibrata passed away. Leadership transitioned to the second generation of the Goenadibrata family. The Pegasus Knalpot outlet in Surabaya was consolidated back into the Sidoarjo factory — all operations are now centralised in Bulusidokare.',
+            'Founder Yahya Goenadibrata passed away. Leadership transitioned to the second generation of the Goenadibrata family. The Pegasus Knalpot retail outlet at Jl. Ngagel Jaya 31, Surabaya was closed and consolidated into the Sidoarjo factory — all equipment, modification, and installation now under one roof. The second generation continues ongoing improvements to production systems and manufacturing control.',
           highlight: false,
         },
         {
           year: 'Today',
           title: 'Three Brands, One Commitment',
           description:
-            'CV Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and SUS304 segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
+            'Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and SUS304 segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
           highlight: true,
         },
       ],
       modernLabel: 'Today',
-      modernTitle: 'A MODERN COMPANY WITH TRADITIONAL ROOTS',
+      modernTitle: 'A MODERN WORKSHOP WITH TRADITIONAL ROOTS',
       modernSubtitle:
         'Cutting-edge technology, operated by experienced hands that carry the craftsmanship philosophy of the very first generation.',
       values: [
         { num: '40+', title: 'Years of Experience', desc: 'Over four decades in the Indonesian exhaust industry — knowledge that cannot be bought.' },
         { num: '3', title: 'Specialised Brand Lines', desc: 'Each brand is designed for a distinct market segment, ensuring the right solution for every need.' },
         { num: 'SUS304', title: 'Premium Material', desc: 'The same high-grade stainless steel used in global industrial and automotive applications.' },
-        { num: '1 Yr', title: 'Full Warranty', desc: 'Our confidence in quality is backed by a 1-year warranty on all standard product lines.' },
+        { num: '✓', title: 'Product Warranty', desc: 'Our confidence in quality is backed by a product warranty on all standard product lines.' },
       ],
     },
     contact: {
@@ -538,7 +550,7 @@ export const translations = {
         { brand: 'Dai-ichi & Pegasus', time: 'Ready Stock' },
         { brand: 'Cobra Sport Custom', time: '~2 Weeks' },
       ],
-      warranty: { title: '1-Year Warranty', desc: 'On all standard product lines' },
+      warranty: { title: 'Product Warranty', desc: 'On all standard product lines' },
       brandMinis: [
         { name: 'DAI-ICHI', tag: 'Premium · SUS304 · OEM', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
