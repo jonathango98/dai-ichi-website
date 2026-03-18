@@ -1,8 +1,26 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
 import useInView from '../hooks/useInView'
+import useCountUp from '../hooks/useCountUp'
 import usePageMeta from '../hooks/usePageMeta'
 import styles from './Home.module.css'
+
+function parseNum(numStr) {
+  // Detect locale from separator: "500,000+" → en-US, "500.000+" → id-ID
+  const hasComma = numStr.includes(',')
+  const hasDot = /\d\.\d/.test(numStr) // dot between digits = thousands sep
+  const locale = hasComma ? 'en-US' : hasDot ? 'id-ID' : null
+  const suffix = numStr.endsWith('+') ? '+' : ''
+  const value = parseInt(numStr.replace(/[,\.+]/g, ''), 10)
+  return { value, suffix, locale }
+}
+
+function AchievementNum({ numStr, trigger }) {
+  const { value, suffix, locale } = parseNum(numStr)
+  const count = useCountUp(value, 1500, trigger)
+  const display = locale ? count.toLocaleString(locale) : String(count)
+  return <>{display}{suffix}</>
+}
 
 const PRODUCT_ACCENTS = ['#D32F2F', '#607D8B', '#FF6F00']
 const PRODUCT_LOGOS = [
@@ -181,7 +199,9 @@ export default function Home() {
                 className={`${styles.achievementCard} reveal${achievementsVisible ? ' visible' : ''}`}
                 style={{ '--reveal-delay': `${i * 100}ms` }}
               >
-                <span className={styles.achievementNum}>{a.num}</span>
+                <span className={styles.achievementNum}>
+                  <AchievementNum numStr={a.num} trigger={achievementsVisible} />
+                </span>
                 <span className={styles.achievementLabel}>{a.label}</span>
               </div>
             ))}
