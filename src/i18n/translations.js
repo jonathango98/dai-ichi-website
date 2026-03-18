@@ -11,7 +11,7 @@ export const translations = {
       brandsTitle: 'Merek Kami',
       brands: [
         'Dai-ichi — Premium OEM & SUS304',
-        'Pegasus — Daily Standard',
+        'Pegasus — Daily OEM Premium Standard',
         'Cobra Sport — Performance Custom',
       ],
       established: 'Berdiri sejak 1985 — Sidoarjo, Indonesia',
@@ -26,7 +26,7 @@ export const translations = {
       heroTitle2: 'PERFORMA.',
       heroTitle3: 'TAHAN LAMA.',
       heroSubtitle:
-        'CV Dai Ichi — produsen sistem knalpot presisi dengan material SUS304 Stainless Steel, MIG Welding, dan Laser Cutting untuk OEM, daily, dan custom performance.',
+        'CV Dai Ichi — produsen sistem knalpot presisi dengan material SUS304 Stainless Steel, MIG Welding, dan Gas Cutting untuk OEM, daily, dan custom performance.',
       heroCta: 'Konsultasi Gratis',
       heroSecondary: 'Kisah Kami',
       statFounded: 'Tahun Berdiri',
@@ -96,7 +96,7 @@ export const translations = {
       achievementsLabel: 'Pencapaian Kami',
       achievementsTitle: 'ANGKA YANG MEMBUKTIKAN KUALITAS',
       achievements: [
-        { num: '1000000', label: 'Unit Terjual' },
+        { num: '500.000+', label: 'Unit Terjual' },
         { num: '40+', label: 'Tahun Beroperasi' },
         { num: '3', label: 'Lini Merek' },
         { num: '100+', label: 'Model Kendaraan' },
@@ -110,9 +110,9 @@ export const translations = {
       tech: [
         {
           icon: '⚡',
-          title: 'Laser Cutting',
+          title: 'Gas Cutting',
           description:
-            'Pemotongan presisi tinggi dengan toleransi minimal menggunakan teknologi laser cutting modern untuk akurasi dimensi yang konsisten di setiap unit.',
+            'Pemotongan presisi menggunakan teknologi gas cutting untuk akurasi dimensi yang konsisten di setiap unit.',
         },
         {
           icon: '🔥',
@@ -154,43 +154,58 @@ export const translations = {
         'Setiap knalpot yang kami buat membawa semangat itu: presisi tanpa kompromi, kualitas tanpa pengecualian.',
       ],
       kanjiMeaning: '"The First" · "Number One"',
+      founderLabel: 'Pendiri',
+      founderName: 'Yahya Goenadibrata',
+      founderYears: '1985 — 2015',
+      founderQuote: '"Satu las yang sempurna lebih berharga dari seribu yang asal jadi."',
+      founderBio: [
+        'Yahya Goenadibrata memulai CV Dai Ichi dari sudut kecil di belakang toko suku cadang Agung Motor, Jl. Gajahmada 31, Sidoarjo — dengan keyakinan bahwa knalpot buatan lokal bisa menyamai kualitas impor.',
+        'Ketika kebakaran menghancurkan segalanya pada 1993, ia memilih untuk membangun kembali, bukan menyerah. Lahirlah pabrik Bulusidokare seluas ±7.000 m² — fondasi dari apa yang kini menjadi CV Dai Ichi Indonesia.',
+      ],
       timelineLabel: 'Perjalanan Kami',
       timelineTitle: 'LINIMASA KETANGGUHAN',
       timelineSubtitle: 'Dari bencana menuju warisan — sejarah CV Dai Ichi Indonesia.',
       events: [
         {
-          year: '1983',
-          title: 'Kebakaran di Jl. Gajahmada 33',
+          year: '1985',
+          title: 'Berdirinya CV Dai Ichi di Jl. Gajahmada',
           description:
-            'Toko Agung Motor di Jalan Gajahmada 33 Surabaya mengalami kebakaran yang menghancurkan. Alih-alih menyerah, peristiwa ini menjadi titik balik — sebuah tekad untuk membangun lebih kuat dari sebelumnya.',
+            'CV Dai Ichi resmi didirikan di belakang toko suku cadang Agung Motor, Jl. Gajahmada 31, Sidoarjo. Perusahaan memasok knalpot OEM pengganti untuk kendaraan Jepang populer seperti Honda dan Daihatsu — di saat mengimpor suku cadang ori dari Jepang masih sangat mahal.',
           highlight: true,
         },
         {
-          year: '1985',
-          title: 'Berdirinya Pabrik di Bulusidokare',
+          year: '1993',
+          title: 'Kebakaran di Jl. Gajahmada 33',
           description:
-            'Dengan semangat yang tak padam, CV Dai Ichi resmi didirikan dan pabrik pertama dibangun di kawasan Bulusidokare, Sidoarjo. Inilah cikal bakal dari operasi manufaktur knalpot yang akan bertahan selama puluhan tahun.',
+            'Kebakaran menghancurkan Agung Motor dan workshop di Jl. Gajahmada 33, Sidoarjo. Alih-alih menyerah, peristiwa ini menjadi titik balik — sebuah tekad untuk membangun lebih kuat dari sebelumnya.',
           highlight: true,
         },
         {
           year: '1995',
-          title: 'Ekspansi: Lahirnya Pegasus Knalpot',
+          title: 'Pabrik Bulusidokare & Lahirnya Pegasus Knalpot',
           description:
-            'Merespons permintaan pasar yang terus berkembang, lini merek kedua — Pegasus Knalpot — diluncurkan dan beroperasi dari lokasi baru di Ngagel Jaya, Surabaya. Langkah ini menandai transformasi dari usaha tunggal menjadi grup multi-merek.',
+            'Pabrik baru seluas ±7.000 m² dibangun di Bulusidokare, Sidoarjo — menandai dimulainya operasi manufaktur skala penuh. Di tahun yang sama, Pegasus Knalpot diluncurkan dan beroperasi dari Ngagel Jaya, Surabaya. Transformasi dari workshop tunggal menjadi grup multi-merek dimulai.',
           highlight: false,
         },
         {
           year: '2000s',
           title: 'Modernisasi & Teknologi Presisi',
           description:
-            'Era modernisasi dimulai dengan investasi pada mesin-mesin presisi industri: laser cutting, MIG welding otomatis, dan polishing machine. Standar kualitas meningkat drastis, membuka pasar OEM skala lebih besar.',
+            'Era modernisasi dimulai dengan investasi pada mesin-mesin presisi industri: MIG welding otomatis, gas cutting, dan polishing machine. Standar kualitas meningkat drastis, membuka akses ke pasar OEM skala lebih besar.',
+          highlight: false,
+        },
+        {
+          year: '2015',
+          title: 'Pergantian Generasi',
+          description:
+            'Pendiri CV Dai Ichi, Yahya Goenadibrata, berpulang. Kepemimpinan beralih ke generasi kedua keluarga Goenadibrata. Outlet Pegasus Knalpot di Surabaya digabungkan kembali ke pabrik Sidoarjo — semua operasi kini terpusat di Bulusidokare.',
           highlight: false,
         },
         {
           year: 'Kini',
           title: 'Tiga Merek, Satu Komitmen',
           description:
-            'Hari ini, CV Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan SUS304, Pegasus untuk daily standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
+            'CV Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan SUS304, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
           highlight: true,
         },
       ],
@@ -248,7 +263,6 @@ export const translations = {
       infoTitle: 'Informasi Kontak',
       info: [
         { icon: '📍', label: 'Pabrik Utama', value: 'Bulusidokare, Sidoarjo, Jawa Timur' },
-        { icon: '🕐', label: 'Jam Operasional', value: 'Senin – Sabtu, 08.00 – 17.00 WIB' },
       ],
       leadTimeTitle: 'Lead Time Produksi',
       leadTimes: [
@@ -276,7 +290,7 @@ export const translations = {
       brandsTitle: 'Our Brands',
       brands: [
         'Dai-ichi — Premium OEM & SUS304',
-        'Pegasus — Daily Standard',
+        'Pegasus — Daily OEM Premium Standard',
         'Cobra Sport — Performance Custom',
       ],
       established: 'Established 1985 — Sidoarjo, Indonesia',
@@ -291,7 +305,7 @@ export const translations = {
       heroTitle2: 'PERFORMANCE.',
       heroTitle3: 'BUILT TO LAST.',
       heroSubtitle:
-        'CV Dai Ichi — precision exhaust system manufacturer using SUS304 Stainless Steel, MIG Welding, and Laser Cutting for OEM, daily, and custom performance applications.',
+        'CV Dai Ichi — precision exhaust system manufacturer using SUS304 Stainless Steel, MIG Welding, and Gas Cutting for OEM, daily, and custom performance applications.',
       heroCta: 'Free Consultation',
       heroSecondary: 'Our Story',
       statFounded: 'Year Founded',
@@ -361,7 +375,7 @@ export const translations = {
       achievementsLabel: 'Our Achievements',
       achievementsTitle: 'NUMBERS THAT PROVE OUR QUALITY',
       achievements: [
-        { num: '1000000', label: 'Units Sold' },
+        { num: '500,000+', label: 'Units Sold' },
         { num: '40+', label: 'Years in Operation' },
         { num: '3', label: 'Brand Lines' },
         { num: '100+', label: 'Car Models Supported' },
@@ -375,9 +389,9 @@ export const translations = {
       tech: [
         {
           icon: '⚡',
-          title: 'Laser Cutting',
+          title: 'Gas Cutting',
           description:
-            'High-precision cutting with minimal tolerances using modern laser cutting technology, ensuring consistent dimensional accuracy across every unit.',
+            'Precision cutting using gas cutting technology, ensuring consistent dimensional accuracy across every unit.',
         },
         {
           icon: '🔥',
@@ -419,43 +433,58 @@ export const translations = {
         'Every exhaust we build carries that spirit: precision without compromise, quality without exception.',
       ],
       kanjiMeaning: '"The First" · "Number One"',
+      founderLabel: 'Founder',
+      founderName: 'Yahya Goenadibrata',
+      founderYears: '1985 — 2015',
+      founderQuote: '"One perfect weld is worth more than a thousand careless ones."',
+      founderBio: [
+        'Yahya Goenadibrata started CV Dai Ichi from a small corner behind the Agung Motor spare parts store on Jl. Gajahmada 31, Sidoarjo — driven by the belief that locally-made exhausts could match the quality of imports.',
+        'When a fire destroyed everything in 1993, he chose to rebuild rather than walk away. From those ashes rose the Bulusidokare factory spanning ±7,000 m² — the foundation of what CV Dai Ichi Indonesia is today.',
+      ],
       timelineLabel: 'Our Journey',
       timelineTitle: 'A TIMELINE OF RESILIENCE',
       timelineSubtitle: 'From adversity to legacy — the history of CV Dai Ichi Indonesia.',
       events: [
         {
-          year: '1983',
-          title: 'The Fire at Jl. Gajahmada 33',
+          year: '1985',
+          title: 'CV Dai Ichi is Founded at Jl. Gajahmada',
           description:
-            'The Agung Motor shop at Jl. Gajahmada 33, Surabaya was devastated by a fire. Rather than give up, the event became a turning point — a resolve to build back stronger than before.',
+            'CV Dai Ichi was officially founded in the back lot of Agung Motor spare parts store at Jl. Gajahmada 31, Sidoarjo. The company supplied OEM replacement exhaust for popular Japanese vehicles — at a time when importing original parts from Japan was prohibitively expensive.',
           highlight: true,
         },
         {
-          year: '1985',
-          title: 'The Bulusidokare Factory is Founded',
+          year: '1993',
+          title: 'The Fire at Jl. Gajahmada 33',
           description:
-            'With an unbroken spirit, CV Dai Ichi was officially established and the first factory was built in the Bulusidokare area of Sidoarjo — the origin of an exhaust manufacturing operation that would endure for decades.',
+            'A fire at Jl. Gajahmada 33, Sidoarjo destroyed Agung Motor and the workshop entirely. Rather than give up, the event became a turning point — a resolve to rebuild stronger than before.',
           highlight: true,
         },
         {
           year: '1995',
-          title: 'Expansion: The Birth of Pegasus Knalpot',
+          title: 'Bulusidokare Factory & the Birth of Pegasus Knalpot',
           description:
-            'Responding to growing market demand, the second brand line — Pegasus Knalpot — was launched and operated from a new location in Ngagel Jaya, Surabaya. This marked the transformation from a single venture into a multi-brand group.',
+            'A new factory of approximately 7,000 m² was established in Bulusidokare, Sidoarjo — marking the start of full-scale manufacturing. That same year, Pegasus Knalpot was launched from Ngagel Jaya, Surabaya. The transformation from a single workshop into a multi-brand group had begun.',
           highlight: false,
         },
         {
           year: '2000s',
           title: 'Modernisation & Precision Technology',
           description:
-            'The modernisation era began with investment in industrial precision machinery: laser cutting, automated MIG welding, and polishing machines. Quality standards improved dramatically, opening larger OEM markets.',
+            'The modernisation era began with investment in industrial precision machinery: automated MIG welding, gas cutting, and polishing machines. Quality standards improved dramatically, opening access to larger OEM markets.',
+          highlight: false,
+        },
+        {
+          year: '2015',
+          title: 'A New Generation Takes the Helm',
+          description:
+            'Founder Yahya Goenadibrata passed away. Leadership transitioned to the second generation of the Goenadibrata family. The Pegasus Knalpot outlet in Surabaya was consolidated back into the Sidoarjo factory — all operations are now centralised in Bulusidokare.',
           highlight: false,
         },
         {
           year: 'Today',
           title: 'Three Brands, One Commitment',
           description:
-            'Today, CV Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and SUS304 segment, Pegasus for the daily standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
+            'CV Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and SUS304 segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
           highlight: true,
         },
       ],
@@ -513,7 +542,6 @@ export const translations = {
       infoTitle: 'Contact Information',
       info: [
         { icon: '📍', label: 'Main Factory', value: 'Bulusidokare, Sidoarjo, East Java' },
-        { icon: '🕐', label: 'Operating Hours', value: 'Monday – Saturday, 08:00 – 17:00 WIB' },
       ],
       leadTimeTitle: 'Production Lead Times',
       leadTimes: [

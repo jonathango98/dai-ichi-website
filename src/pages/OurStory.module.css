@@ -145,6 +145,84 @@
   letter-spacing: 0.1em;
 }
 
+/* ─── FOUNDER SECTION ─────────────────────────────── */
+.founderSection {
+  background-color: var(--white);
+}
+
+.founderGrid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.founderImageWrap {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.founderImageWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 3px solid transparent;
+  border-bottom-color: var(--red);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.founderImage {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.founderContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.founderName {
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  color: var(--charcoal);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.founderYears {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1.75rem;
+}
+
+.founderQuote {
+  font-family: var(--font-headline);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--charcoal);
+  border-left: 4px solid var(--red);
+  padding-left: 1.25rem;
+  margin: 0 0 1.75rem;
+  line-height: 1.6;
+}
+
+.founderBioText {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+
 /* ─── TIMELINE ────────────────────────────────────── */
 .timelineSection {
   background-color: var(--charcoal);
@@ -331,6 +409,15 @@
 
   .meaningVisual {
     order: -1;
+  }
+
+  .founderGrid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .founderImage {
+    height: 400px;
   }
 
   .valueGrid {

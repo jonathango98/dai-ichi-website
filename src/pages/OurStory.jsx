@@ -10,6 +10,7 @@ export default function OurStory() {
   usePageMeta({ title: s.metaTitle, description: s.metaDescription })
 
   const [meaningRef, meaningVisible] = useInView()
+  const [founderRef, founderVisible] = useInView()
   const [timelineHeaderRef, timelineHeaderVisible] = useInView()
   const [timelineRef, timelineVisible] = useInView()
   const [valuesHeaderRef, valuesHeaderVisible] = useInView()
@@ -52,6 +53,32 @@ export default function OurStory() {
                 <div className={styles.meaningKanjiLabel}>Dai-ichi</div>
                 <div className={styles.meaningKanjiMeaning}>{s.kanjiMeaning}</div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FOUNDER ── */}
+      <section className={styles.founderSection}>
+        <div className={styles.sectionContainer}>
+          <div className={styles.founderGrid} ref={founderRef}>
+            <div className={`${styles.founderImageWrap} reveal-left${founderVisible ? ' visible' : ''}`}>
+              <img
+                src="/yahya-goenadibrata.jpeg"
+                alt="Yahya Goenadibrata — Founder of CV Dai Ichi Indonesia"
+                className={styles.founderImage}
+              />
+            </div>
+            <div className={`${styles.founderContent} reveal-right${founderVisible ? ' visible' : ''}`}
+              style={{ '--reveal-delay': '120ms' }}
+            >
+              <span className={styles.sectionLabel}>{s.founderLabel}</span>
+              <h2 className={styles.founderName}>{s.founderName}</h2>
+              <p className={styles.founderYears}>{s.founderYears}</p>
+              <blockquote className={styles.founderQuote}>{s.founderQuote}</blockquote>
+              {s.founderBio.map((para, i) => (
+                <p key={i} className={styles.founderBioText}>{para}</p>
+              ))}
             </div>
           </div>
         </div>
