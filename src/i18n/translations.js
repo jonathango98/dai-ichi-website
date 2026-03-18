@@ -10,7 +10,7 @@ export const translations = {
       navTitle: 'Navigasi',
       brandsTitle: 'Merek Kami',
       brands: [
-        'Dai-ichi — Premium OEM & SUS304',
+        'Dai-ichi — Premium OEM & Sport',
         'Pegasus — Daily OEM Premium Standard',
         'Cobra Sport — Performance Custom',
       ],
@@ -20,13 +20,13 @@ export const translations = {
     },
     home: {
       metaTitle: 'Dai Ichi Indonesia — OEM, Custom & Performance Exhaust',
-      metaDescription: 'Dai Ichi Indonesia — produsen sistem knalpot sejak 1985. 3 merek, SUS304 stainless steel, pengiriman ke seluruh Indonesia.',
+      metaDescription: 'Dai Ichi Indonesia — produsen sistem knalpot sejak 1985. 3 merek, stainless steel premium, pengiriman ke seluruh Indonesia.',
       heroBadge: 'Sejak 1985 · Sidoarjo, Indonesia',
       heroTitle1: 'DIBUAT UNTUK',
       heroTitle2: 'PERFORMA.',
       heroTitle3: 'TAHAN LAMA.',
       heroSubtitle:
-        'Dai Ichi Indonesia — produsen sistem knalpot presisi dengan material SUS304 Stainless Steel, MIG Welding, dan Gas Cutting untuk OEM, daily, dan custom performance.',
+        'Dai Ichi Indonesia — produsen sistem knalpot presisi dengan MIG Welding, Gas Cutting, dan stainless steel premium untuk OEM, daily, dan custom performance.',
       heroCta: 'Konsultasi Gratis',
       heroSecondary: 'Kisah Kami',
       statFounded: 'Tahun Berdiri',
@@ -35,7 +35,7 @@ export const translations = {
       trust: [
         'Garansi Produk',
         'Ready Stock — Lini Standar',
-        'SUS304 Stainless Steel',
+        'Stainless Steel Premium',
         'Custom Fabrication Available',
       ],
       productsLabel: 'Lini Produk',
@@ -79,7 +79,7 @@ export const translations = {
             'Custom stainless steel fabrication untuk enthusiast yang menginginkan profil suara dan performa unik. Setiap unit dibuat sesuai spesifikasi kendaraan Anda.',
           features: [
             'Full Custom Fabrication',
-            'SUS304 Stainless Steel',
+            'High-Grade Stainless Steel',
             'Custom Sound Profile',
             'Track & Street Ready',
             'Lead Time ~2 Minggu',
@@ -206,7 +206,7 @@ export const translations = {
           year: 'Kini',
           title: 'Tiga Merek, Satu Komitmen',
           description:
-            'Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan SUS304, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
+            'Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan sport, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
           highlight: true,
         },
       ],
@@ -217,7 +217,6 @@ export const translations = {
       values: [
         { num: '40+', title: 'Tahun Pengalaman', desc: 'Empat dekade lebih di industri knalpot Indonesia — pengetahuan yang tidak bisa dibeli.' },
         { num: '3', title: 'Lini Merek Khusus', desc: 'Setiap merek dirancang untuk segmen pasar yang berbeda, memastikan solusi yang tepat untuk setiap kebutuhan.' },
-        { num: 'SUS304', title: 'Material Premium', desc: 'High-grade stainless steel yang sama digunakan pada aplikasi industri dan otomotif global.' },
         { num: '✓', title: 'Garansi Produk', desc: 'Kepercayaan diri kami terhadap kualitas diwujudkan dalam garansi kualitas produksi untuk semua produk lini standar.' },
       ],
     },
@@ -272,7 +271,7 @@ export const translations = {
       ],
       warranty: { title: 'Garansi Produk', desc: 'Untuk semua lini produk standar' },
       brandMinis: [
-        { name: 'DAI-ICHI', tag: 'Premium · SUS304 · OEM', color: '#D32F2F' },
+        { name: 'DAI-ICHI', tag: 'Premium · Stainless · OEM', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
         { name: 'COBRA SPORT', tag: 'Performance · Custom · 2 Minggu', color: '#FF6F00' },
       ],
@@ -290,7 +289,7 @@ export const translations = {
       navTitle: 'Navigation',
       brandsTitle: 'Our Brands',
       brands: [
-        'Dai-ichi — Premium OEM & SUS304',
+        'Dai-ichi — Premium OEM & Sport',
         'Pegasus — Daily OEM Premium Standard',
         'Cobra Sport — Performance Custom',
       ],
@@ -300,13 +299,13 @@ export const translations = {
     },
     home: {
       metaTitle: 'Dai Ichi Indonesia — OEM, Custom & Performance Exhaust',
-      metaDescription: 'Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, SUS304 stainless steel, nationwide delivery.',
+      metaDescription: 'Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, premium stainless steel, nationwide delivery.',
       heroBadge: 'Since 1985 · Sidoarjo, Indonesia',
       heroTitle1: 'CRAFTED FOR',
       heroTitle2: 'PERFORMANCE.',
       heroTitle3: 'BUILT TO LAST.',
       heroSubtitle:
-        'Dai Ichi Indonesia — precision exhaust system manufacturer using SUS304 Stainless Steel, MIG Welding, and Gas Cutting for OEM, daily, and custom performance applications.',
+        'Dai Ichi Indonesia — precision exhaust system manufacturer using MIG Welding, Gas Cutting, and premium stainless steel for OEM, daily, and custom performance applications.',
       heroCta: 'Free Consultation',
       heroSecondary: 'Our Story',
       statFounded: 'Year Founded',
@@ -315,7 +314,7 @@ export const translations = {
       trust: [
         'Product Warranty',
         'Ready Stock — Standard Lines',
-        'SUS304 Stainless Steel',
+        'Premium Stainless Steel',
         'Custom Fabrication Available',
       ],
       productsLabel: 'Product Lines',
@@ -359,7 +358,7 @@ export const translations = {
             'Custom stainless steel fabrication for enthusiasts seeking a unique sound profile and performance. Every unit built to your vehicle\'s exact specification.',
           features: [
             'Full Custom Fabrication',
-            'SUS304 Stainless Steel',
+            'High-Grade Stainless Steel',
             'Custom Sound Profile',
             'Track & Street Ready',
             'Lead Time ~2 Weeks',
@@ -486,7 +485,7 @@ export const translations = {
           year: 'Today',
           title: 'Three Brands, One Commitment',
           description:
-            'Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and SUS304 segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
+            'Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and sport segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
           highlight: true,
         },
       ],
@@ -497,7 +496,6 @@ export const translations = {
       values: [
         { num: '40+', title: 'Years of Experience', desc: 'Over four decades in the Indonesian exhaust industry — knowledge that cannot be bought.' },
         { num: '3', title: 'Specialised Brand Lines', desc: 'Each brand is designed for a distinct market segment, ensuring the right solution for every need.' },
-        { num: 'SUS304', title: 'Premium Material', desc: 'The same high-grade stainless steel used in global industrial and automotive applications.' },
         { num: '✓', title: 'Product Warranty', desc: 'Our confidence in quality is backed by a product warranty on all standard product lines.' },
       ],
     },
@@ -552,7 +550,7 @@ export const translations = {
       ],
       warranty: { title: 'Product Warranty', desc: 'On all standard product lines' },
       brandMinis: [
-        { name: 'DAI-ICHI', tag: 'Premium · SUS304 · OEM', color: '#D32F2F' },
+        { name: 'DAI-ICHI', tag: 'Premium · Stainless · OEM', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
         { name: 'COBRA SPORT', tag: 'Performance · Custom · 2 Weeks', color: '#FF6F00' },
       ],
