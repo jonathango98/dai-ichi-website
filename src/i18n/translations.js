@@ -45,10 +45,10 @@ export const translations = {
       products: [
         {
           title: 'DAI-ICHI',
-          tagline: 'Premium OEM & Sport',
+          tagline: 'OEM Standard',
           tag: 'Premium',
           description:
-            'Material Stainless Steel berkualitas tinggi untuk aplikasi OEM dan sport. Presisi gas cutting dan MIG welding untuk hasil yang presisi.',
+            'Material Stainless Steel berkualitas tinggi untuk aplikasi OEM standard. Presisi gas cutting dan MIG welding untuk hasil yang presisi.',
           features: [
             'High-Grade Stainless Steel',
             'OEM Fitment Precision',
@@ -157,7 +157,7 @@ export const translations = {
         'Kisah bermula dari <em>Yahya Goenadibrata</em>, pendiri Dai Ichi Indonesia. Adiknya, <em>Teguh Goenadibrata</em> dan istrinya, pernah tinggal dan bekerja di kota <em>Ichikawa</em>, Jepang — menyerap semangat <em>monozukuri</em>, kecintaan mendalam terhadap pengerjaan tangan yang presisi. Inspirasi itu mengalir ke Yahya, yang menikah dengan <em>Daisy</em>. Dari dua nama inilah identitas merek terbentuk: "Dai" dari Daisy, dan "ichi" dari Ichikawa — menjadi <strong>Dai-ichi</strong>.',
         'Setiap knalpot yang kami buat membawa semangat itu: presisi tanpa kompromi, kualitas tanpa pengecualian.',
       ],
-      kanjiMeaning: '"The First" · "Number One"',
+      kanjiMeaning: '"The Big One"',
       founderLabel: 'Pendiri',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
@@ -206,7 +206,7 @@ export const translations = {
           year: 'Kini',
           title: 'Tiga Merek, Satu Komitmen',
           description:
-            'Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen premium OEM dan sport, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
+            'Dai Ichi Indonesia mengoperasikan tiga lini merek: Dai-ichi untuk segmen OEM standard, Pegasus untuk Daily OEM Premium Standard, dan Cobra Sport untuk custom performance fabrication. Warisan Yahya Goenadibrata terus hidup dalam setiap sambungan las.',
           highlight: true,
         },
       ],
@@ -271,7 +271,7 @@ export const translations = {
       ],
       warranty: { title: 'Garansi Produk', desc: 'Untuk semua lini produk standar' },
       brandMinis: [
-        { name: 'DAI-ICHI', tag: 'Premium · Stainless · OEM', color: '#D32F2F' },
+        { name: 'DAI-ICHI', tag: 'OEM Standard', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
         { name: 'COBRA SPORT', tag: 'Performance · Custom · 2 Minggu', color: '#FF6F00' },
       ],
@@ -324,10 +324,10 @@ export const translations = {
       products: [
         {
           title: 'DAI-ICHI',
-          tagline: 'Premium OEM & Sport',
+          tagline: 'OEM Standard',
           tag: 'Premium',
           description:
-            'High-grade Stainless Steel for OEM and sport applications. Precision gas cutting and MIG welding for accurate results.',
+            'High-grade Stainless Steel for standard OEM applications. Precision gas cutting and MIG welding for accurate results.',
           features: [
             'High-Grade Stainless Steel',
             'OEM Fitment Precision',
@@ -436,7 +436,7 @@ export const translations = {
         'It began with <em>Yahya Goenadibrata</em>, the founder of Dai Ichi Indonesia. His brother, <em>Teguh Goenadibrata</em> and his wife, once lived and worked in the city of <em>Ichikawa</em>, Japan — absorbing the spirit of <em>monozukuri</em>, a profound dedication to precision craftsmanship. That inspiration flowed through to Yahya, who married <em>Daisy</em>. From these two names the brand\'s identity was formed: "Dai" from Daisy, and "ichi" from Ichikawa — <strong>Dai-ichi</strong>.',
         'Every exhaust we build carries that spirit: precision without compromise, quality without exception.',
       ],
-      kanjiMeaning: '"The First" · "Number One"',
+      kanjiMeaning: '"The Big One"',
       founderLabel: 'Founder',
       founderName: 'Yahya Goenadibrata',
       founderYears: '1985 — 2015',
@@ -485,7 +485,7 @@ export const translations = {
           year: 'Today',
           title: 'Three Brands, One Commitment',
           description:
-            'Dai Ichi Indonesia operates three brand lines: Dai-ichi for the premium OEM and sport segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
+            'Dai Ichi Indonesia operates three brand lines: Dai-ichi for the standard OEM segment, Pegasus for the Daily OEM Premium Standard, and Cobra Sport for custom performance fabrication. Yahya Goenadibrata\'s legacy lives on in every weld.',
           highlight: true,
         },
       ],
@@ -550,7 +550,7 @@ export const translations = {
       ],
       warranty: { title: 'Product Warranty', desc: 'On all standard product lines' },
       brandMinis: [
-        { name: 'DAI-ICHI', tag: 'Premium · Stainless · OEM', color: '#D32F2F' },
+        { name: 'DAI-ICHI', tag: 'OEM Standard', color: '#D32F2F' },
         { name: 'PEGASUS', tag: 'Daily · Aluminized · Ready Stock', color: '#607D8B' },
         { name: 'COBRA SPORT', tag: 'Performance · Custom · 2 Weeks', color: '#FF6F00' },
       ],

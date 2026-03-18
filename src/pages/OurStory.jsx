@@ -112,6 +112,16 @@ export default function OurStory() {
                   <span className={styles.timelinePhotoCaptionName}>{s.bengkelName}</span>
                   <span className={styles.timelinePhotoCaptionRole}>{s.bengkelLabel}</span>
                 </div>
+                <img
+                  src="/daiichi-front.jpeg"
+                  alt="Pintu masuk pabrik Dai Ichi Indonesia, Bulusidokare"
+                  className={styles.timelinePhoto}
+                  style={{ marginTop: '2rem' }}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>Pabrik Dai Ichi Indonesia</span>
+                  <span className={styles.timelinePhotoCaptionRole}>Di Sidoarjo</span>
+                </div>
               </div>
             </div>
           </div>
