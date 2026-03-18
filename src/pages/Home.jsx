@@ -35,7 +35,6 @@ export default function Home() {
 
   usePageMeta({ title: h.metaTitle, description: h.metaDescription })
 
-  const [trustRef, trustVisible] = useInView()
   const [productsHeaderRef, productsHeaderVisible] = useInView()
   const [productsGridRef, productsGridVisible] = useInView()
   const [virtualShopRef, virtualShopVisible] = useInView()
@@ -61,41 +60,6 @@ export default function Home() {
             <Link to="/contact" className={styles.heroCta}>{h.heroCta}</Link>
             <Link to="/our-story" className={styles.heroSecondary}>{h.heroSecondary}</Link>
           </div>
-        </div>
-        <div className={styles.heroStats}>
-          <div className={styles.stat}>
-            <span className={styles.statNum}>1985</span>
-            <span className={styles.statLabel}>{h.statFounded}</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>40+</span>
-            <span className={styles.statLabel}>{h.statExp}</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>3</span>
-            <span className={styles.statLabel}>{h.statLines}</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── TRUST BAR ── */}
-      <section className={styles.trustBar}>
-        <div className={styles.trustContainer} ref={trustRef}>
-          {h.trust.map((item, i) => (
-            <>
-              <div
-                key={item}
-                className={`${styles.trustItem} reveal${trustVisible ? ' visible' : ''}`}
-                style={{ '--reveal-delay': `${i * 80}ms` }}
-              >
-                <span className={styles.trustIcon}>✓</span>
-                <span>{item}</span>
-              </div>
-              {i < h.trust.length - 1 && <div key={`d${i}`} className={styles.trustDivider} />}
-            </>
-          ))}
         </div>
       </section>
 

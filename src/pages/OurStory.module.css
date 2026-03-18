@@ -356,8 +356,9 @@
 
 .valueGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 320px));
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .valueCard {
@@ -441,7 +442,7 @@
   }
 
   .valueGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 320px));
   }
 }
 
