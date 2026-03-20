@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useLanguage } from '../contexts/LanguageContext'
 import useInView from '../hooks/useInView'
 import usePageMeta from '../hooks/usePageMeta'
+import ShinyText from '../components/ShinyText'
 import styles from './Contact.module.css'
 
 export default function Contact() {
@@ -92,7 +93,7 @@ export default function Contact() {
           <span className={styles.heroBadge}>{c.heroBadge}</span>
           <h1 className={styles.heroTitle}>
             {c.heroTitle1}<br />
-            <span className={styles.heroAccent}>{c.heroTitle2}</span>
+            <ShinyText text={c.heroTitle2} />
           </h1>
           <p className={styles.heroSubtitle}>{c.heroSubtitle}</p>
         </div>
