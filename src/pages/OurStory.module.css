@@ -1,3 +1,20 @@
+/* ─── PAGE HERO KEYFRAMES ────────────────────────── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes heroBadgePop {
+  from { opacity: 0; transform: scale(0.75) translateY(8px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes dotPop {
+  0%   { transform: scale(0); opacity: 0; }
+  60%  { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 /* ─── PAGE HERO ──────────────────────────────────── */
 .pageHero {
   background-color: var(--charcoal);
@@ -33,6 +50,8 @@
   padding: 0.3rem 0.9rem;
   border-radius: 2px;
   margin-bottom: 1.5rem;
+  animation: heroBadgePop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: 0.15s;
 }
 
 .heroTitle {
@@ -41,6 +60,8 @@
   font-weight: 900;
   line-height: 1.05;
   margin-bottom: 1.5rem;
+  animation: heroFadeUp 0.75s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: 0.3s;
 }
 
 .heroAccent {
@@ -52,6 +73,8 @@
   color: var(--silver);
   max-width: 580px;
   line-height: 1.8;
+  animation: heroFadeUp 0.65s cubic-bezier(0.4, 0, 0.2, 1) both;
+  animation-delay: 0.5s;
 }
 
 /* ─── MEANING SECTION ─────────────────────────────── */
@@ -170,6 +193,53 @@
   line-height: 1.8;
 }
 
+.timelineBody {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.timelinePhotoCol {
+  position: relative;
+}
+
+.timelinePhotoSticky {
+  position: sticky;
+  top: 6rem;
+}
+
+.timelinePhoto {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  border-bottom: 4px solid var(--red);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.timelinePhotoCaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.timelinePhotoCaptionName {
+  font-family: var(--font-headline);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.timelinePhotoCaptionRole {
+  font-size: 0.75rem;
+  color: var(--silver);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -215,6 +285,12 @@
   box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.3);
   flex-shrink: 0;
   margin-top: 0.25rem;
+  transform: scale(0);
+}
+
+:global(.reveal.visible) .eventDot {
+  animation: dotPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  animation-delay: calc(var(--reveal-delay, 0ms) + 200ms);
 }
 
 .eventHighlight .eventDot {
@@ -280,8 +356,9 @@
 
 .valueGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 320px));
   gap: 1.5rem;
+  justify-content: center;
 }
 
 .valueCard {
@@ -322,6 +399,23 @@
   line-height: 1.7;
 }
 
+/* ─── REDUCED MOTION ──────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .heroBadge,
+  .heroTitle,
+  .heroSubtitle {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .eventDot {
+    transform: scale(1);
+  }
+  :global(.reveal.visible) .eventDot {
+    animation: none;
+  }
+}
+
 /* ─── RESPONSIVE ──────────────────────────────────── */
 @media (max-width: 900px) {
   .meaningGrid {
@@ -333,8 +427,22 @@
     order: -1;
   }
 
+  .timelineBody {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .timelinePhotoCol {
+    order: -1;
+  }
+
+  .timelinePhotoSticky {
+    position: static;
+    max-width: 320px;
+  }
+
   .valueGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 320px));
   }
 }
 

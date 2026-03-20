@@ -1,6 +1,8 @@
-# Brand & Design Strategy: CV Dai Ichi Indonesia
+# Brand & Design Strategy: Dai Ichi Indonesia
 
-This document reflects the current state of the CV Dai Ichi Indonesia website as built.
+This document is the single source of truth for Dai Ichi Indonesia — covering company facts, brand identity, design system, and website implementation.
+
+> **IMPORTANT — AI instruction:** Do not fabricate, infer, or invent any company information, copy, statistics, quotes, dates, names, or other content that is not explicitly stated in this document. If information is missing or marked as a placeholder, leave it as a placeholder or ask the owner — never fill it in with assumed or generated content.
 
 ---
 
@@ -16,23 +18,86 @@ This document reflects the current state of the CV Dai Ichi Indonesia website as
 
 ---
 
-## 1. Brand Identity & Logo Assets
+## 1. Company Overview
 
-The brand architecture consists of a parent manufacturer brand and two specialised sub-brands, plus a virtual storefront.
+Dai Ichi Indonesia is a precision exhaust system manufacturer based in Bulusidokare, Sidoarjo, Indonesia. Founded in 1985, the company has over 40 years of experience producing OEM, daily, and custom performance exhaust systems using industrial-grade fabrication technology — including gas cutting, MIG welding, polishing machines, and precision pipe bending.
 
-### 1a. Manufacturers
+**Key Stats**
 
-* **Dai-ichi (Parent / OEM):**
-    * **Asset:** `public/dai-ichi-logo.png` — white lettermark with transparent background. Used in navbar, footer, and Dai-ichi product card.
-    * **Focus:** OEM exhaust systems, high-grade SUS304 Stainless Steel, and corporate authority.
-* **Pegasus (Value):**
-    * **Asset:** `public/pegasus-logo.png` — white pegasus silhouette with transparent background. Used in Pegasus product card.
-    * **Focus:** Daily drivers, Aluminized/Galvanized steel, and mass-market reliability.
-* **Cobra Sport (Performance):**
-    * **Asset:** `public/cobra-sports-logo.png` — white cobra silhouette with transparent background. Used in Cobra Sport product card.
-    * **Focus:** Custom/modified stainless steel fabrication, sound profiles, and enthusiast aesthetics.
+| Metric | Value |
+|---|---|
+| Units sold | 500,000+ |
+| Years in operation | 40+ years (since 1985) |
+| Product brands | 3 |
+| Vehicle models covered | 100+ |
+| Partner workshops | 100+ |
+| Cities covered | 50+ |
 
-### 1b. Virtual Shop — Pegasus Knalpot
+---
+
+## 2. Brand Name Origin — 第一 (Dai-ichi)
+
+"Dai-ichi" (第一) is Japanese for **"Nomor Satu Yang Besar"** / **"The Big Number 1"**. The name carries a dual family heritage:
+
+* **"Dai"** — from **Daisy**, wife of founder **Yahya Goenadibrata**
+* **"ichi"** — from **Ichikawa**, the city in Japan where Yahya's brother **Teguh Goenadibrata** and his wife lived and worked, which inspired the monozukuri (craftsmanship) philosophy that Yahya carried into the business
+
+The name is both an aspiration and a family legacy — precision without compromise, quality without exception.
+
+**Kanji breakdown (from PDF source):**
+* Dai = "Big"
+* Ichi = "The First" · "Number One"
+
+---
+
+## 3. Three Brands
+
+### 3a. Dai-ichi — Premium OEM & Sport
+
+High-grade stainless steel exhaust systems for OEM fitment and sport applications. Precision gas cutting and MIG welding.
+
+| Feature | Detail |
+|---|---|
+| Material | High-Grade Stainless Steel |
+| Technology | Gas Cutting, MIG Welding |
+| Finish | Heat Resistant Paint Finish |
+| Fitment | OEM Precision |
+| Availability | Ready Stock |
+| Warranty | Garansi Produk (duration: PLACEHOLDER — confirm with owner) |
+
+* **Asset:** `public/dai-ichi-logo.png` — white lettermark, transparent background. Used in navbar, footer, and Dai-ichi product card.
+
+### 3b. Pegasus — Daily OEM Premium Standard
+
+Reliable daily exhaust systems using aluminized and galvanized steel. Covers all popular vehicle models at competitive pricing.
+
+| Feature | Detail |
+|---|---|
+| Material | Aluminized & Galvanized Steel |
+| Market | Daily drivers, popular models |
+| Availability | Ready Stock |
+| Price Point | Competitive |
+| Installation | Easy Installation |
+| Durability | High |
+
+* **Asset:** `public/pegasus-logo.png` — white pegasus silhouette, transparent background. Used in Pegasus product card.
+* **Online Store:** Instagram [@pegasusknalpot](https://instagram.com/pegasusknalpot) · WhatsApp · Facebook
+
+### 3c. Cobra Sport — Performance & Custom Fabrication
+
+Full custom high-grade stainless steel fabrication for enthusiasts who want a unique sound profile and performance output. Every unit is built to the customer's vehicle specification.
+
+| Feature | Detail |
+|---|---|
+| Material | High-Grade Stainless Steel |
+| Fabrication | Full Custom |
+| Sound Profile | Custom-tuned per spec |
+| Use | Track & Street Ready |
+| Lead Time | ~2 weeks |
+
+* **Asset:** `public/cobra-sports-logo.png` — white cobra silhouette, transparent background. Used in Cobra Sport product card.
+
+### 3d. Virtual Shop — Pegasus Knalpot
 
 * **Name:** Pegasus Knalpot (also referred to as "Toko Virtual").
 * **Purpose:** Online storefront where customers can purchase any product from the three brands and choose delivery to a partnered mechanic shop (for installation) or directly to their home.
@@ -42,17 +107,52 @@ The brand architecture consists of a parent manufacturer brand and two specialis
 
 ---
 
-## 2. Brand Tone of Voice
+## 4. Company Timeline
+
+*(Source: dai-ichi.pdf — do not modify without owner confirmation)*
+
+**1985** — Founded as an exhaust workshop in the back warehouse of spare parts store **Agung Motor**, Jl. Gajahmada 31, Sidoarjo. Agung Motor also functioned as the retail shop for sales and marketing of Dai-ichi knalpot. The company focused on providing OEM exhaust needs for popular Japanese vehicles of that era — and became an OEM Producer for Honda and Daihatsu, at a time when importing original replacement parts from Japan was prohibitively expensive due to dimensional shipping constraints.
+
+**1993** — A fire at Jl. Gajahmada 33, Sidoarjo destroyed Agung Motor and the workshop entirely — burning everything to the ground. Rather than closing, the company took this as a turning point — a resolve to rebuild stronger.
+
+**1995 (Factory)** — With undiminished spirit, a new factory was established in **Bulusidokare, Sidoarjo** on approximately 7,000 m² of land, marking the beginning of full-scale manufacturing operations that would endure for decades.
+
+**1995 (Expansion)** — Responding to growing market demand, the second brand — **Pegasus Knalpot** — was launched and operated from a new location at Ngagel Jaya 73, later moving to a larger premises at **Jl. Ngagel Jaya 31, Surabaya**. This marked the transformation from a single workshop to a multi-brand group.
+
+**2000s** — Era of modernisation. Investment in industrial precision machinery: gas cutting, automated MIG welding, and polishing machines. Quality standards improved dramatically, opening access to larger OEM markets.
+
+**2015** — Founder **Yahya Goenadibrata** passed away and the company transitioned to second-generation leadership. Shortly before, the Pegasus Knalpot retail and installation outlet at Jl. Ngagel Jaya 31, Surabaya was closed and consolidated into the Dai-ichi Indonesia factory in Sidoarjo — all equipment, modification, and installation operations under one roof. The second generation continues ongoing improvements to production systems and manufacturing control to raise company performance.
+
+**Today** — Three brands, one commitment. Dai-ichi for the OEM standard segment, Pegasus for daily OEM Premium standard, Cobra Sport for custom performance fabrication. Yahya Goenadibrata's legacy lives on in every weld.
+
+---
+
+## 5. Manufacturing Technology
+
+*(Source: dai-ichi.pdf)*
+
+| Process | Description |
+|---|---|
+| **Gas Cutting** | Precision cutting for consistent dimensional accuracy |
+| **MIG Welding** | Metal Inert Gas welding — strong, sealed, corrosion-resistant joints |
+| **Polishing Machine** | Multi-stage polishing for high-quality mirror finish |
+| **Precision Bending** | Controlled-radius pipe bending for optimal exhaust gas flow and perfect fitment |
+
+> **Note:** The company uses **Gas Cutting** — not laser cutting. Do not use "laser cutting" anywhere on the site.
+
+---
+
+## 6. Brand Tone of Voice
 
 The communication style is **"The Master Craftsman"**:
 * **Authoritative:** Demonstrating deep technical knowledge of metallurgy and precision welding.
 * **Legacy-Rich:** Honoring the 1985 foundation and the story behind the Dai-ichi name.
-* **Technical:** Using precise terms like MIG Welding, SUS304, and Laser Cutting to build professional trust.
+* **Technical:** Using precise terms like MIG Welding, Gas Cutting, and SUS304 to build professional trust.
 * **Ambitious:** Reflecting the "Dai-ichi" (Number 1) name, bold and market-leading.
 
 ---
 
-## 3. Color Scheme & Typography
+## 7. Color Scheme & Typography
 
 | Role | Color Name | Hex Code | Purpose |
 | :--- | :--- | :--- | :--- |
@@ -63,20 +163,21 @@ The communication style is **"The Master Craftsman"**:
 
 * **Headlines:** *Montserrat* (Bold/All-caps) — loaded via Google Fonts.
 * **Body Text:** *Inter* — loaded via Google Fonts.
+* **CSS vars:** `--charcoal`, `--red`, `--silver`, `--frost`, `--white`, `--font-headline`, `--font-body`
 
 ---
 
-## 4. Overall Mood & Visual Style
+## 8. Overall Mood & Visual Style
 
 * **Mood:** Industrial, Precise, Powerful, and Trustworthy.
 * **Imagery Style (Future):**
-    * **Action Shots:** Close-ups of MIG welding sparks, laser cutting, and polishing machines — for the Technical Excellence section.
+    * **Action Shots:** Close-ups of MIG welding sparks, gas cutting, and polishing machines — for the Technical Excellence section.
     * **Product Shots:** Hero shots of finished stainless steel systems — for product cards.
-    * **Heritage:** Historical photos of the original 1985 Bulusidokare site and the Jl. Gajahmada store — for the Our Story timeline.
+    * **Heritage:** Historical photos of the original 1985 Sidoarjo site and the Jl. Gajahmada store — for the Our Story timeline.
 
 ---
 
-## 5. SEO & Meta Data
+## 9. SEO & Meta Data
 
 Every page must include complete meta tags for search engines and social sharing. All strings live in `src/i18n/translations.js` and switch with the active language.
 
@@ -90,7 +191,7 @@ Every page must include complete meta tags for search engines and social sharing
 
 <!-- Primary Meta -->
 <title>Dai Ichi Indonesia — Knalpot OEM, Custom & Performance Exhaust</title>
-<meta name="description" content="CV Dai Ichi Indonesia — manufacturer of OEM, custom, and performance exhaust systems since 1985. SUS304 stainless steel. Shop online via Pegasus Knalpot." />
+<meta name="description" content="Dai Ichi Indonesia — manufacturer of OEM, custom, and performance exhaust systems since 1985. SUS304 stainless steel. Shop online via Pegasus Knalpot." />
 <meta name="keywords" content="knalpot, exhaust, OEM, SUS304, stainless steel, custom exhaust, Dai Ichi, Pegasus Knalpot, Cobra Sport, Indonesia, Sidoarjo" />
 
 <!-- Open Graph -->
@@ -111,23 +212,19 @@ Every page must include complete meta tags for search engines and social sharing
 
 ### Per-Page Overrides
 
-Each route should dynamically set `<title>` and `<meta name="description">` via a shared `usePageMeta` hook or `<Helmet>` equivalent.
-
 | Route | Title (EN) | Description (EN) |
 | :--- | :--- | :--- |
-| `/` | Dai Ichi Indonesia — OEM, Custom & Performance Exhaust | CV Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, SUS304 stainless steel, nationwide delivery. |
+| `/` | Dai Ichi Indonesia — OEM, Custom & Performance Exhaust | Dai Ichi Indonesia — manufacturer of exhaust systems since 1985. 3 brands, SUS304 stainless steel, nationwide delivery. |
 | `/our-story` | Our Story — Dai Ichi Indonesia | The story behind Dai Ichi Indonesia: from a 1985 Sidoarjo workshop to Indonesia's trusted exhaust manufacturer. |
 | `/contact` | Contact Us — Dai Ichi Indonesia | Consult with a fabrication expert. Reach us via WhatsApp, Instagram, or our online form. |
 
 ### Structured Data (JSON-LD)
 
-Add `Organization` and `LocalBusiness` schema to the homepage for rich search results.
-
 ```json
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "CV Dai Ichi Indonesia",
+  "name": "Dai Ichi Indonesia",
   "url": "https://PLACEHOLDER_DOMAIN",
   "logo": "https://PLACEHOLDER_DOMAIN/dai-ichi-logo.png",
   "description": "Manufacturer of OEM, custom, and performance exhaust systems since 1985.",
@@ -141,7 +238,7 @@ Add `Organization` and `LocalBusiness` schema to the homepage for rich search re
 
 ---
 
-## 6. Website Structure (As Built)
+## 10. Website Structure (As Built)
 
 ### Tech Stack
 * Vite + React 19, React Router DOM v7
@@ -161,26 +258,21 @@ Persistent social media buttons accessible from every page (footer and/or floati
 
 ### Page 1: Home (`/`)
 * **Hero Section:** Full-viewport dark hero with animated accents, stat bar (1985 / 40+ years / 3 brands), and two CTAs.
-* **Trust Bar:** Red strip — 1-year warranty, ready stock, SUS304, custom fabrication.
+* **Trust Bar:** Red strip — Product Warranty, ready stock, SUS304, custom fabrication.
 * **"Big Three" Product Grid:** Each card shows brand logo, tag, description, feature list, and consult CTA.
-    * **Dai-ichi:** Premium OEM (SUS304).
+    * **Dai-ichi:** Premium OEM (High-Grade Stainless Steel, Heat Resistant Paint Finish).
     * **Pegasus:** The Daily Standard (Aluminized/Galvanized).
     * **Cobra Sport:** Performance & Custom/Modified Fabrication.
 * **Virtual Shop CTA:** Banner or card promoting Pegasus Knalpot as the online purchase channel — links to Instagram/WhatsApp. Emphasise: "Buy online, ship to your nearest partnered mechanic or direct to your door."
-* **Achievements Section:** Highlight key milestones with animated counters or stat cards (see §9 for data).
-* **Technical Excellence:** Four cards — Laser Cutting, MIG Welding, Polishing Machine, Precision Bending.
+* **Achievements Section:** Highlight key milestones with animated counters or stat cards (see §12 for data).
+* **Technical Excellence:** Four cards — Gas Cutting, MIG Welding, Polishing Machine, Precision Bending.
 * **CTA Section:** Full-width prompt driving to Contact page.
 
 ### Page 2: Our Story (`/our-story`)
 * **Hero:** Dark header with page title.
-* **The Meaning of "Dai-ichi":** Explanation of the name origin with Japanese kanji visual card.
-* **Timeline of Resilience:**
-    * **1983:** Fire at Jl. Gajahmada 33, Surabaya (Agung Motor).
-    * **1985:** Official founding — factory built at Bulusidokare, **Sidoarjo**.
-    * **1995:** Expansion — Pegasus Knalpot launched at Ngagel Jaya, Surabaya *(historical; that location is now closed)*.
-    * **2000s:** Modernisation with precision machinery.
-    * **Today:** Three-brand operation with virtual shop.
-* **Values Grid:** 40+ years / 3 brands / SUS304 / 1-year warranty.
+* **The Meaning of "Dai-ichi":** Explanation of the name origin ("Nomor Satu Yang Besar" / "The Big Number 1") with Japanese kanji visual card.
+* **Timeline of Resilience:** Based on §4 above.
+* **Values Grid:** 40+ years / 3 brands / Material Premium / Garansi Produk.
 
 ### Page 3: Contact Us (`/contact`)
 * **Primary CTA:** "Consult with a Fabrication Expert."
@@ -194,11 +286,11 @@ Persistent social media buttons accessible from every page (footer and/or floati
 * **Info Sidebar:**
     * **Virtual Shop links:** Instagram (@pegasusknalpot) and WhatsApp button.
     * **Lead times:** Custom Orders (Cobra Sport) ~2 weeks; Standard Lines (Dai-ichi & Pegasus) ready stock.
-    * **Warranty badge:** 1-year warranty on all standard product lines.
+    * **Warranty badge:** Garansi Produk on all standard product lines.
 
 ---
 
-## 7. Scroll Animations
+## 11. Scroll Animations
 
 All scroll-triggered animations use the **IntersectionObserver API** via a shared `useInView` hook (`src/hooks/useInView.js`). Animations run **once** — elements do not re-animate on scroll-up. Respects `prefers-reduced-motion`.
 
@@ -238,43 +330,39 @@ Stagger delay is set via inline CSS `--reveal-delay` (e.g. `style={{ '--reveal-d
 
 ---
 
-## 8. Operational Facts
+## 12. Achievements & Social Proof
 
-* **Manufacturer location:** **Sidoarjo**, Jawa Timur.
+Display on the Home page as animated stat cards or counters. Values stored in `src/i18n/translations.js` for bilingual support.
+
+| Achievement | Value | Notes |
+| :--- | :--- | :--- |
+| Units sold | 500,000+ | Lifetime total across all brands. |
+| Years in operation | 40+ years | Since 1985. |
+| Brands offered | 3 brands | Dai-ichi, Pegasus, Cobra Sport. |
+| Car models supported | 100+ | Distinct vehicle fitments. |
+| Partnered mechanic shops | 100+ | Nationwide network. |
+| Cities covered | 50+ | Geographic reach of mechanic network. |
+
+---
+
+## 13. Operational Facts
+
+* **Manufacturer location:** **Bulusidokare, Sidoarjo**, Jawa Timur.
 * **No physical showroom, no opening hours displayed.** All purchases go through the Pegasus Knalpot virtual shop.
 * **Delivery options:**
     * Ship to a partnered mechanic shop (for professional installation).
     * Ship directly to customer's home.
-    * installed inhouse in Sidoarjo
+    * Installed in-house in Sidoarjo.
 * **Lead Times:**
     * *Custom Orders (Cobra Sport):* ~2 weeks.
     * *Standard Lines (Dai-ichi & Pegasus):* Ready stock.
-* **Warranty:** 1 year on all standard product lines.
-* **Language:** Bilingual — professional Indonesian (default) with English toggle. English technical terms (SUS304, MIG Welding, etc.) used in both languages.
+* **Warranty:** Garansi Produk on all standard product lines. Duration not specified in source — do not state "1 year" unless confirmed by owner.
+* **Language:** Bilingual — professional Indonesian (default) with English toggle. English technical terms (SUS304, MIG Welding, Gas Cutting, etc.) used in both languages.
 
 ---
 
-## 9. Achievements & Social Proof
+## 14. Contact & Legal
 
-Display on the Home page as animated stat cards or counters. Use placeholders until real data is confirmed.
-
-| Achievement | Placeholder Value | Notes |
-| :--- | :--- | :--- |
-| Units sold | 1,000,000+ units sold | Lifetime total across all brands. |
-| Years in operation | 40+ years | Since 1985. |
-| Brands offered | 3 brands | Dai-ichi, Pegasus, Cobra Sport. |
-| Car models supported | 200+ car brands | Number of distinct vehicle fitments. |
-| Partnered mechanic shops | 1,000+ mechanic partners | Nationwide network. |
-| Cities covered | 100+ cities in Indonesia | Geographic reach of mechanic network. |
-
-These values should be stored in `src/i18n/translations.js` so they can be updated in one place and displayed bilingually.
-
----
-
-## 10. Brand Name Origin (Corrected)
-
-* **Yahya Goenadibrata** is the founder of the brand.
-* His brother, **Tjhiang** and wife, previously lived and worked in **Ichikawa**, Japan. This experience with Japanese precision craftsmanship became a lasting inspiration.
-* Yahya married a woman named **Daisy**.
-* The brand name combines: **"Dai"** (from *Daisy*) + **"ichi"** (from *Ichikawa*) = **Dai-ichi**.
-* "Dai-ichi" (第一) also means **"Big One"** in Japanese, a dual meaning that reflects both family heritage and market ambition.
+* **Location:** Bulusidokare, Sidoarjo, Indonesia
+* **Online Store:** Instagram [@pegasusknalpot](https://instagram.com/pegasusknalpot)
+* **Legal:** © 2026 Dai Ichi Indonesia. Hak cipta dilindungi. Berdiri sejak 1985 — Sidoarjo, Indonesia.

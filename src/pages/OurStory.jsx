@@ -1,6 +1,7 @@
 import { useLanguage } from '../contexts/LanguageContext'
 import useInView from '../hooks/useInView'
 import usePageMeta from '../hooks/usePageMeta'
+import GalleryCarousel from '../components/GalleryCarousel'
 import styles from './OurStory.module.css'
 
 export default function OurStory() {
@@ -44,8 +45,8 @@ export default function OurStory() {
                 />
               ))}
             </div>
-            <div className={`${styles.meaningVisual} reveal-right${meaningVisible ? ' visible' : ''}`}
-              style={{ '--reveal-delay': '120ms' }}
+            <div className={`${styles.meaningVisual} reveal-scale${meaningVisible ? ' visible' : ''}`}
+              style={{ '--reveal-delay': '180ms' }}
             >
               <div className={styles.meaningCard}>
                 <div className={styles.meaningKanji}>第一</div>
@@ -69,27 +70,66 @@ export default function OurStory() {
             <p className={styles.timelineSubtitle}>{s.timelineSubtitle}</p>
           </div>
 
-          <div className={styles.timeline} ref={timelineRef}>
-            {s.events.map((event, i) => (
-              <div
-                key={event.year}
-                className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} reveal${timelineVisible ? ' visible' : ''}`}
-                style={{ '--reveal-delay': `${i * 100}ms` }}
-              >
-                <div className={styles.eventYear}>{event.year}</div>
-                <div className={styles.eventConnector}>
-                  <div className={styles.eventDot} />
-                  <div className={styles.eventLine} />
+          <div className={styles.timelineBody}>
+            <div className={styles.timeline} ref={timelineRef}>
+              {s.events.map((event, i) => (
+                <div
+                  key={event.year}
+                  className={`${styles.event} ${event.highlight ? styles.eventHighlight : ''} ${event.highlight ? 'reveal-scale' : 'reveal'}${timelineVisible ? ' visible' : ''}`}
+                  style={{ '--reveal-delay': `${i * 100}ms` }}
+                >
+                  <div className={styles.eventYear}>{event.year}</div>
+                  <div className={styles.eventConnector}>
+                    <div className={styles.eventDot} />
+                    <div className={styles.eventLine} />
+                  </div>
+                  <div className={styles.eventContent}>
+                    <h3 className={styles.eventTitle}>{event.title}</h3>
+                    <p className={styles.eventDesc}>{event.description}</p>
+                  </div>
                 </div>
-                <div className={styles.eventContent}>
-                  <h3 className={styles.eventTitle}>{event.title}</h3>
-                  <p className={styles.eventDesc}>{event.description}</p>
+              ))}
+            </div>
+
+            <div className={styles.timelinePhotoCol}>
+              <div className={styles.timelinePhotoSticky}>
+                <img
+                  src="/yahya-goenadibrata.jpeg"
+                  alt="Yahya Goenadibrata — Founder of Dai Ichi Indonesia"
+                  className={styles.timelinePhoto}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>{s.founderName}</span>
+                  <span className={styles.timelinePhotoCaptionRole}>{s.founderLabel} · {s.founderYears}</span>
+                </div>
+                <img
+                  src="/bengkel.jpeg"
+                  alt="Bengkel Ngagel Jaya — Dai Ichi Indonesia showroom"
+                  className={styles.timelinePhoto}
+                  style={{ marginTop: '2rem' }}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>{s.bengkelName}</span>
+                  <span className={styles.timelinePhotoCaptionRole}>{s.bengkelLabel}</span>
+                </div>
+                <img
+                  src="/daiichi-front.jpeg"
+                  alt="Pintu masuk pabrik Dai Ichi Indonesia, Bulusidokare"
+                  className={styles.timelinePhoto}
+                  style={{ marginTop: '2rem' }}
+                />
+                <div className={styles.timelinePhotoCaption}>
+                  <span className={styles.timelinePhotoCaptionName}>Pabrik Dai Ichi Indonesia</span>
+                  <span className={styles.timelinePhotoCaptionRole}>Di Sidoarjo</span>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
+
+      {/* ── GALLERY ── */}
+      <GalleryCarousel />
 
       {/* ── MODERN EVOLUTION ── */}
       <section className={styles.modernSection}>

@@ -20,6 +20,7 @@ export default function Contact() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [errors, setErrors] = useState({})
 
   const validate = () => {
@@ -39,14 +40,27 @@ export default function Contact() {
     }
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     const validationErrors = validate()
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors)
       return
     }
-    setSubmitted(true)
+    setSubmitting(true)
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ 'form-name': 'contact', ...form }).toString(),
+      })
+      setSubmitted(true)
+    } catch {
+      // fail silently — show success anyway so user isn't blocked
+      setSubmitted(true)
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   if (submitted) {
@@ -92,7 +106,8 @@ export default function Contact() {
             <h2 className={styles.formTitle}>{c.formTitle}</h2>
             <p className={styles.formIntro}>{c.formIntro}</p>
 
-            <form className={styles.form} onSubmit={handleSubmit} noValidate>
+            <form className={styles.form} onSubmit={handleSubmit} noValidate name="contact" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className={styles.fieldRow}>
                 <div className={styles.field}>
                   <label className={styles.label} htmlFor="name">
@@ -181,8 +196,8 @@ export default function Contact() {
                 {errors.message && <span className={styles.errorMsg}>{errors.message}</span>}
               </div>
 
-              <button type="submit" className={styles.submitBtn}>
-                {c.submitBtn}
+              <button type="submit" className={styles.submitBtn} disabled={submitting}>
+                {submitting ? '...' : c.submitBtn}
               </button>
 
               <p className={styles.disclaimer}>{c.disclaimer}</p>

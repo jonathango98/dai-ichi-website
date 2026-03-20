@@ -1,8 +1,26 @@
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
 import useInView from '../hooks/useInView'
+import useCountUp from '../hooks/useCountUp'
 import usePageMeta from '../hooks/usePageMeta'
 import styles from './Home.module.css'
+
+function parseNum(numStr) {
+  // Detect locale from separator: "500,000+" → en-US, "500.000+" → id-ID
+  const hasComma = numStr.includes(',')
+  const hasDot = /\d\.\d/.test(numStr) // dot between digits = thousands sep
+  const locale = hasComma ? 'en-US' : hasDot ? 'id-ID' : null
+  const suffix = numStr.endsWith('+') ? '+' : ''
+  const value = parseInt(numStr.replace(/[,\.+]/g, ''), 10)
+  return { value, suffix, locale }
+}
+
+function AchievementNum({ numStr, trigger }) {
+  const { value, suffix, locale } = parseNum(numStr)
+  const count = useCountUp(value, 1500, trigger)
+  const display = locale ? count.toLocaleString(locale) : String(count)
+  return <>{display}{suffix}</>
+}
 
 const PRODUCT_ACCENTS = ['#D32F2F', '#607D8B', '#FF6F00']
 const PRODUCT_LOGOS = [
@@ -17,7 +35,6 @@ export default function Home() {
 
   usePageMeta({ title: h.metaTitle, description: h.metaDescription })
 
-  const [trustRef, trustVisible] = useInView()
   const [productsHeaderRef, productsHeaderVisible] = useInView()
   const [productsGridRef, productsGridVisible] = useInView()
   const [virtualShopRef, virtualShopVisible] = useInView()
@@ -43,41 +60,6 @@ export default function Home() {
             <Link to="/contact" className={styles.heroCta}>{h.heroCta}</Link>
             <Link to="/our-story" className={styles.heroSecondary}>{h.heroSecondary}</Link>
           </div>
-        </div>
-        <div className={styles.heroStats}>
-          <div className={styles.stat}>
-            <span className={styles.statNum}>1985</span>
-            <span className={styles.statLabel}>{h.statFounded}</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>40+</span>
-            <span className={styles.statLabel}>{h.statExp}</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.stat}>
-            <span className={styles.statNum}>3</span>
-            <span className={styles.statLabel}>{h.statLines}</span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── TRUST BAR ── */}
-      <section className={styles.trustBar}>
-        <div className={styles.trustContainer} ref={trustRef}>
-          {h.trust.map((item, i) => (
-            <>
-              <div
-                key={item}
-                className={`${styles.trustItem} reveal${trustVisible ? ' visible' : ''}`}
-                style={{ '--reveal-delay': `${i * 80}ms` }}
-              >
-                <span className={styles.trustIcon}>✓</span>
-                <span>{item}</span>
-              </div>
-              {i < h.trust.length - 1 && <div key={`d${i}`} className={styles.trustDivider} />}
-            </>
-          ))}
         </div>
       </section>
 
@@ -181,7 +163,9 @@ export default function Home() {
                 className={`${styles.achievementCard} reveal${achievementsVisible ? ' visible' : ''}`}
                 style={{ '--reveal-delay': `${i * 100}ms` }}
               >
-                <span className={styles.achievementNum}>{a.num}</span>
+                <span className={styles.achievementNum}>
+                  <AchievementNum numStr={a.num} trigger={achievementsVisible} />
+                </span>
                 <span className={styles.achievementLabel}>{a.label}</span>
               </div>
             ))}
